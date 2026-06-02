@@ -893,6 +893,7 @@ section {
 
 .color-indicator.brown { background-color: var(--color-pouch-brown); }
 .color-indicator.ivory { background-color: var(--color-pouch-ivory); border: 1px solid rgba(0, 0, 0, 0.2); }
+.color-indicator.black { background-color: var(--color-dark); }
 
 .gallery-main-card {
     display: grid;
@@ -1978,8 +1979,164 @@ footer {
     transform: translateY(-4px) scale(1.03);
 }
 
+/* Premium Material Details Section */
+.details-section {
+    background-color: var(--color-sand);
+    border-top: 1px solid var(--border-light);
+}
 
-/* -------------------------------------------------------------
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.details-visual-side {
+    position: relative;
+}
+
+.details-img-card {
+    background-color: var(--color-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-elastic);
+}
+
+.details-img-card:hover {
+    transform: translateY(-5px);
+}
+
+.details-img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+    object-fit: cover;
+}
+
+.details-info-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detail-spec-card {
+    display: flex;
+    gap: 24px;
+    background-color: var(--color-light);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-smooth);
+}
+
+.detail-spec-card:hover {
+    transform: translateX(5px);
+    border-color: var(--color-gold);
+    box-shadow: var(--shadow-md);
+}
+
+.detail-number {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-gold);
+    line-height: 1;
+}
+
+.detail-desc-box h3 {
+    font-size: 1.15rem;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+.detail-desc-box p {
+    font-size: 0.95rem;
+    color: var(--color-dark-muted);
+}
+
+/* Size Guide Section */
+.size-section {
+    background-color: var(--color-light);
+    border-top: 1px solid var(--border-light);
+}
+
+.size-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.size-image-wrapper {
+    background-color: var(--color-sand);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform var(--transition-smooth);
+}
+
+.size-image-wrapper:hover {
+    transform: translateY(-3px);
+}
+
+.size-img {
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+    margin: 0 auto;
+}
+
+.size-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.size-spec-card {
+    background-color: var(--color-sand);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-smooth);
+}
+
+.size-spec-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+    box-shadow: var(--shadow-md);
+}
+
+.size-spec-card h3 {
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+.size-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--color-gold-light);
+    color: var(--color-gold);
+    border: 1px solid rgba(179, 143, 107, 0.2);
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.size-spec-card p {
+    font-size: 0.95rem;
+    color: var(--color-dark-muted);
+}
+
+
+/* ------------------------------------------------------------- */
  * Responsive Layouts (Media Queries)
  * ------------------------------------------------------------- */
 
@@ -2166,6 +2323,16 @@ footer {
     
     .info-table td {
         padding: 12px 10px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .size-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 

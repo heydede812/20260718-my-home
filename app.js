@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryInfoContents = document.querySelectorAll('.gallery-info-content');
     const viewSelectBtns = document.querySelectorAll('.view-select-btn');
     
-    let activeGalleryColor = 'brown'; // default 'brown' or 'ivory'
+    let activeGalleryColor = 'brown'; // default 'brown', 'ivory', or 'black'
     
     galleryTabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
