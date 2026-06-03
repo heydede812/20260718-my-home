@@ -1,0 +1,68 @@
+import { Inter, Outfit } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+})
+
+export const metadata = {
+  title: 'ARLLOY | 여행의 준비를 더 우아하게',
+  description: '여행을 위한 프리미엄 화장품 파우치 ARLLOY Travel Organizer Pouch. 대용량 수납, 세워서 보관, 생활방수 원단으로 여행의 준비를 더욱 우아하고 스마트하게 정리하세요.',
+  keywords: '화장품파우치, 여행용파우치, 프리미엄파우치, 메이크업파우치, 수납파우치, ARLLOY, 알로이파우치',
+  openGraph: {
+    title: 'ARLLOY | 여행의 준비를 더 우아하게',
+    description: '대용량 수납, 세워서 보관, 생활방수 원단으로 여행의 준비를 더욱 우아하고 스마트하게 정리하세요.',
+    type: 'website',
+    locale: 'ko_KR',
+    url: 'https://arlloy.com',
+    siteName: 'ARLLOY',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+}
+
+export default function RootLayout({ children }) {
+  // Naver Shopping Product Structured Data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "ARLLOY Travel Organizer Pouch",
+    "image": "https://arlloy.com/images/pouch_black_open.png",
+    "description": "여행의 준비를 더 우아하게. 대용량 수납, 세워서 보관하는 생활방수 프리미엄 트래블 오거나이저 파우치.",
+    "brand": {
+      "@type": "Brand",
+      "name": "ARLLOY"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "KRW",
+      "price": "38250",
+      "availability": "https://schema.org/InStock",
+      "url": "https://arlloy.com"
+    }
+  }
+
+  return (
+    <html lang="ko" className={`${inter.variable} ${outfit.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className="bg-white text-brand-black min-h-screen">
+        {children}
+      </body>
+    </html>
+  )
+}
