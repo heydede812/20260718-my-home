@@ -5,16 +5,21 @@
 /* Custom Reset & Variables */
 :root {
     /* Color Palette */
-    --color-dark: #1e1d1a;
-    --color-dark-muted: #4e4c47;
-    --color-light: #fdfdfc;
-    --color-sand: #f5f2eb;
-    --color-sand-dark: #eae6dd;
-    --color-gold: #b38f6b;
-    --color-gold-hover: #9c7753;
-    --color-gold-light: #f7f3ed;
-    --border-light: rgba(30, 29, 26, 0.08);
-    --border-medium: rgba(30, 29, 26, 0.15);
+    --color-dark: #1f1c19;
+    --color-dark-muted: #554f49;
+    --color-light: #fdfdfb;
+    --color-sand: #f4eee3;
+    --color-sand-dark: #e9dfcf;
+    --color-gold: #c09971;
+    --color-gold-hover: #a5805a;
+    --color-gold-light: #fbf9f4;
+    --border-light: rgba(31, 28, 25, 0.08);
+    --border-medium: rgba(31, 28, 25, 0.15);
+    
+    /* Botanical Accents */
+    --color-botanical-green: #375b47;
+    --color-botanical-green-light: #edf2ee;
+    --color-botanical-green-hover: #294636;
     
     /* Product Colors */
     --color-pouch-pink: #e8c5c8;
@@ -29,14 +34,15 @@
     
     /* Shadows & Glows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 8px 24px rgba(30, 29, 26, 0.08);
-    --shadow-lg: 0 16px 48px rgba(30, 29, 26, 0.12);
+    --shadow-md: 0 8px 24px rgba(31, 28, 25, 0.06);
+    --shadow-lg: 0 16px 48px rgba(31, 28, 25, 0.1);
     --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.06);
-    --glow-pink: rgba(232, 197, 200, 0.4);
-    --glow-blue: rgba(29, 45, 68, 0.2);
-    --glow-beige: rgba(168, 124, 92, 0.3);
-    --glow-brown: rgba(110, 71, 59, 0.35);
-    --glow-ivory: rgba(247, 244, 239, 0.6);
+    --glow-pink: rgba(232, 197, 200, 0.3);
+    --glow-blue: rgba(29, 45, 68, 0.15);
+    --glow-beige: rgba(168, 124, 92, 0.2);
+    --glow-brown: rgba(110, 71, 59, 0.25);
+    --glow-ivory: rgba(247, 244, 239, 0.4);
+    --glow-green: rgba(55, 91, 71, 0.3);
     
     /* Border Radius */
     --radius-sm: 8px;
@@ -112,15 +118,17 @@ section {
     display: flex;
     align-items: center;
     z-index: 1000;
-    background-color: rgba(253, 253, 252, 0.75);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: var(--border-light);
+    background-color: transparent;
+    border-bottom: 1px solid rgba(253, 253, 251, 0.15);
     transition: var(--transition-smooth);
 }
 
 #main-header.scrolled {
     height: 70px;
+    background-color: rgba(252, 250, 246, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: var(--border-light);
     box-shadow: var(--shadow-sm);
 }
 
@@ -134,10 +142,16 @@ section {
 .logo {
     font-size: 1.75rem;
     font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-smooth);
+}
+
+#main-header.scrolled .logo {
     background: linear-gradient(135deg, var(--color-dark), var(--color-gold));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: var(--transition-smooth);
+    text-shadow: none;
 }
 
 .logo:hover {
@@ -152,9 +166,20 @@ section {
 .nav-link {
     font-size: 0.95rem;
     font-weight: 500;
-    color: var(--color-dark-muted);
+    color: rgba(253, 253, 251, 0.85);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     padding: 8px 0;
+    transition: var(--transition-fast);
+}
+
+#main-header.scrolled .nav-link {
+    color: var(--color-dark-muted);
+    text-shadow: none;
+}
+
+#main-header.scrolled .nav-link:hover {
+    color: var(--color-dark);
 }
 
 .nav-link::after {
@@ -164,19 +189,45 @@ section {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--color-gold);
+    background-color: var(--color-botanical-green);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform var(--transition-fast);
 }
 
 .nav-link:hover {
+    color: #ffffff;
+}
+
+#main-header.scrolled .nav-link:hover {
     color: var(--color-dark);
 }
 
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+/* Header Action Button Adjustments */
+#main-header .btn-outline {
+    border-color: rgba(253, 253, 251, 0.7);
+    color: #ffffff;
+}
+
+#main-header.scrolled .btn-outline {
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+}
+
+#main-header.scrolled .btn-outline:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#main-header .btn-outline:hover {
+    background-color: #ffffff;
+    color: var(--color-dark);
+    border-color: #ffffff;
 }
 
 /* Buttons */
@@ -206,15 +257,15 @@ section {
 }
 
 .btn-primary {
-    background-color: var(--color-dark);
+    background-color: var(--color-botanical-green);
     color: var(--color-light);
-    box-shadow: 0 4px 14px rgba(30, 29, 26, 0.15);
+    box-shadow: 0 4px 14px rgba(55, 91, 71, 0.15);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-gold);
+    background-color: var(--color-botanical-green-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(179, 143, 107, 0.25);
+    box-shadow: 0 6px 20px rgba(55, 91, 71, 0.3);
 }
 
 .btn-outline {
@@ -286,9 +337,13 @@ section {
 .mobile-menu-btn .bar {
     width: 100%;
     height: 2px;
-    background-color: var(--color-dark);
+    background-color: #ffffff;
     border-radius: var(--radius-full);
     transition: var(--transition-smooth);
+}
+
+#main-header.scrolled .mobile-menu-btn .bar {
+    background-color: var(--color-dark);
 }
 
 .mobile-drawer {
@@ -327,7 +382,12 @@ section {
     min-height: 90vh;
     display: flex;
     align-items: center;
-    background-color: var(--color-gold-light);
+    background-image: linear-gradient(to right, rgba(31, 28, 25, 0.8), rgba(31, 28, 25, 0.2)), url('images/hero_wood_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: var(--color-light);
 }
 
 .hero-container {
@@ -344,13 +404,14 @@ section {
 .badge {
     display: inline-block;
     padding: 6px 16px;
-    background-color: rgba(179, 143, 107, 0.1);
-    color: var(--color-gold);
-    border: 1px solid rgba(179, 143, 107, 0.2);
+    background-color: var(--color-botanical-green);
+    color: var(--color-botanical-green-light);
+    border: 1px solid rgba(253, 253, 251, 0.25);
     border-radius: var(--radius-full);
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
 }
 
 .hero-title {
@@ -358,10 +419,12 @@ section {
     font-weight: 800;
     line-height: 1.15;
     margin-bottom: 24px;
+    color: #ffffff;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, var(--color-gold), var(--color-pouch-beige));
+    background: linear-gradient(135deg, var(--color-gold), #e0bf9b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -370,12 +433,18 @@ section {
     font-size: 1.15rem;
     margin-bottom: 40px;
     max-width: 520px;
+    color: rgba(253, 253, 251, 0.9);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .hero-buttons {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+.hero-buttons .btn-text {
+    color: var(--color-light);
 }
 
 .hero-visual {
@@ -500,7 +569,7 @@ section {
 
 /* Brand Story Section */
 .story-section {
-    background-color: var(--color-light);
+    background-color: var(--color-gold-light);
 }
 
 .story-grid {
@@ -1040,7 +1109,7 @@ section {
 
 /* Colors Showcase Section */
 .colors-section {
-    background-color: var(--color-light);
+    background-color: var(--color-gold-light);
 }
 
 .colors-layout {
@@ -1110,8 +1179,8 @@ section {
 .color-badge-current {
     display: inline-block;
     padding: 4px 12px;
-    background-color: var(--color-gold-light);
-    color: var(--color-gold);
+    background-color: var(--color-botanical-green-light);
+    color: var(--color-botanical-green);
     font-size: 0.8rem;
     font-weight: 700;
     border-radius: var(--radius-full);
@@ -1174,7 +1243,7 @@ section {
     border-radius: var(--radius-md);
     padding: 20px;
     margin-bottom: 30px;
-    border: 1px solid rgba(179, 143, 107, 0.15);
+    border: 1px solid rgba(192, 153, 113, 0.2);
 }
 
 .price-row {
@@ -1779,6 +1848,35 @@ footer {
     100% { opacity: 1; top: 6px; }
 }
 
+/* Decorative Botanical Accents */
+.decor-leaf {
+    position: absolute;
+    color: var(--color-botanical-green);
+    opacity: 0.05;
+    font-size: 15rem;
+    pointer-events: none;
+    z-index: 1;
+    filter: blur(2px);
+    transition: transform var(--transition-smooth);
+}
+
+.decor-leaf.leaf-left {
+    bottom: -60px;
+    left: -60px;
+    transform: rotate(45deg);
+}
+
+.decor-leaf.leaf-right {
+    top: -60px;
+    right: -60px;
+    transform: rotate(-135deg);
+}
+
+.details-section .decor-leaf {
+    color: var(--color-botanical-green-light);
+    opacity: 0.02;
+}
+
 /* Scroll Animation classes */
 .reveal-on-scroll {
     opacity: 0;
@@ -1979,10 +2077,19 @@ footer {
     transform: translateY(-4px) scale(1.03);
 }
 
-/* Premium Material Details Section */
+/* Premium Material Details Section - Dark Wood Theme */
 .details-section {
-    background-color: var(--color-sand);
-    border-top: 1px solid var(--border-light);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-top: 1px solid rgba(253, 253, 251, 0.08);
+}
+
+.details-section .section-title {
+    color: #ffffff;
+}
+
+.details-section .section-desc {
+    color: rgba(253, 253, 251, 0.7);
 }
 
 .details-grid {
@@ -1997,8 +2104,8 @@ footer {
 }
 
 .details-img-card {
-    background-color: var(--color-light);
-    border: 1px solid var(--border-light);
+    background-color: rgba(253, 253, 251, 0.04);
+    border: 1px solid rgba(253, 253, 251, 0.08);
     border-radius: var(--radius-lg);
     padding: 24px;
     box-shadow: var(--shadow-md);
@@ -2025,10 +2132,10 @@ footer {
 .detail-spec-card {
     display: flex;
     gap: 24px;
-    background-color: var(--color-light);
+    background-color: rgba(253, 253, 251, 0.03);
     padding: 24px;
     border-radius: var(--radius-md);
-    border: 1px solid var(--border-light);
+    border: 1px solid rgba(253, 253, 251, 0.08);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-smooth);
 }
@@ -2037,6 +2144,11 @@ footer {
     transform: translateX(5px);
     border-color: var(--color-gold);
     box-shadow: var(--shadow-md);
+}
+
+.details-section .detail-spec-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    background-color: rgba(253, 253, 251, 0.06);
 }
 
 .detail-number {
@@ -2053,9 +2165,17 @@ footer {
     margin-bottom: 8px;
 }
 
+.details-section .detail-desc-box h3 {
+    color: #ffffff;
+}
+
 .detail-desc-box p {
     font-size: 0.95rem;
     color: var(--color-dark-muted);
+}
+
+.details-section .detail-desc-box p {
+    color: rgba(253, 253, 251, 0.65);
 }
 
 /* Size Guide Section */
