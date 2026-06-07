@@ -42,10 +42,10 @@ export default function Features() {
             KEY FEATURES
           </span>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-            우아함을 더하는 디테일 기능
+            Every detail matters.
           </h2>
           <p className="text-neutral-600 font-medium text-base md:text-lg mt-4">
-            단순히 담는 파우치를 넘어, 완벽한 사용자 편의를 위해 디테일하게 설계된 ARLLOY의 가치를 확인해 보세요.
+            We spent months refining materials and shapes to deliver a flawless organizer.
           </p>
         </div>
 

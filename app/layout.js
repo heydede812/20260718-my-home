@@ -15,7 +15,7 @@ const outfit = Outfit({
 
 export const metadata = {
   title: 'ARLLOY | 여행의 준비를 더 우아하게',
-  description: '여행을 위한 프리미엄 화장품 파우치 ARLLOY Travel Organizer Pouch. 대용량 수납, 세워서 보관, 생활방수 원단으로 여행의 준비를 더욱 우아하고 스마트하게 정리하세요.',
+  description: '여행을 위한 프리미엄 화장품 파우치 ARLLOY 트래블 오거나이저 파우치. 대용량 수납, 세워서 보관, 생활방수 원단으로 여행의 준비를 더욱 우아하고 스마트하게 정리하세요.',
   keywords: '화장품파우치, 여행용파우치, 프리미엄파우치, 메이크업파우치, 수납파우치, ARLLOY, 알로이파우치',
   openGraph: {
     title: 'ARLLOY | 여행의 준비를 더 우아하게',
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "ARLLOY Travel Organizer Pouch",
+    "name": "ARLLOY 트래블 오거나이저 파우치",
     "image": "https://arlloy.com/images/pouch_black_open.png",
     "description": "여행의 준비를 더 우아하게. 대용량 수납, 세워서 보관하는 생활방수 프리미엄 트래블 오거나이저 파우치.",
     "brand": {

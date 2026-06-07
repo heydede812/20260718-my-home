@@ -38,10 +38,10 @@ export default function Solution() {
             THE SOLUTION
           </span>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-            ARLLOY 파우치는 다릅니다.
+            Meet ARLLOY.
           </h2>
           <p className="text-neutral-600 font-medium text-base md:text-lg mt-4">
-            공간을 나누고 가치를 채우는 특허받은 3단 독립형 수납 설계를 확인해 보세요.
+            Experience a smart structural design that adapts to your cosmetic shapes and compresses down flat.
           </p>
         </div>
 

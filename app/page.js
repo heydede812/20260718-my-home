@@ -1,33 +1,38 @@
+'use client'
+
+import { CartProvider } from '../context/CartContext'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import PainPoints from '../components/PainPoints'
-import Solution from '../components/Solution'
-import Features from '../components/Features'
-import StorageTest from '../components/StorageTest'
-import Comparison from '../components/Comparison'
-import Reviews from '../components/Reviews'
 import Philosophy from '../components/Philosophy'
-import FAQ from '../components/FAQ'
+import FeaturedCollection from '../components/FeaturedCollection'
+import SignatureProduct from '../components/SignatureProduct'
+import LifestyleGallery from '../components/LifestyleGallery'
+import Reviews from '../components/Reviews'
+import BrandStory from '../components/BrandStory'
+import Newsletter from '../components/Newsletter'
 import CTA from '../components/CTA'
 import Footer from '../components/Footer'
+import StickyCart from '../components/StickyCart'
+import ExitIntentPopup from '../components/ExitIntentPopup'
 
 export default function Home() {
   return (
-    <>
+    <CartProvider>
       <Header />
-      <main className="relative overflow-hidden">
+      <main className="relative overflow-hidden bg-brand-ivory">
         <Hero />
-        <PainPoints />
-        <Solution />
-        <Features />
-        <StorageTest />
-        <Comparison />
-        <Reviews />
         <Philosophy />
-        <FAQ />
+        <FeaturedCollection />
+        <SignatureProduct />
+        <LifestyleGallery />
+        <Reviews />
+        <BrandStory />
+        <Newsletter />
         <CTA />
       </main>
       <Footer />
-    </>
+      <StickyCart />
+      <ExitIntentPopup />
+    </CartProvider>
   )
 }

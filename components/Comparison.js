@@ -42,10 +42,10 @@ export default function Comparison() {
             THE COMPARISON
           </span>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-            압도적인 차이를 경험하세요
+            Before vs After
           </h2>
           <p className="text-neutral-500 font-medium text-sm md:text-base mt-4">
-            비교할수록 확실해지는 ARLLOY만의 프리미엄 디테일과 편의성입니다.
+            Compare a traditional pouch with the organized simplicity of ARLLOY.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Comparison() {
             <thead>
               <tr className="border-b border-neutral-100 bg-neutral-50">
                 <th className="p-6 md:p-8 font-heading font-bold text-brand-black text-sm md:text-base">비교 항목</th>
-                <th className="p-6 md:p-8 font-heading font-extrabold text-brand-lavender text-sm md:text-base bg-brand-lavender/[0.03]">ARLLOY Pouch</th>
+                <th className="p-6 md:p-8 font-heading font-extrabold text-brand-lavender text-sm md:text-base bg-brand-lavender/[0.03]">ARLLOY</th>
                 <th className="p-6 md:p-8 font-heading font-bold text-brand-gray text-sm md:text-base">일반 파우치</th>
               </tr>
             </thead>

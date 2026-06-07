@@ -4,23 +4,23 @@ export default function PainPoints() {
   const problems = [
     {
       icon: <Layers3 className="text-red-400" size={24} />,
-      title: "파우치 안이 항상 엉망이다",
-      desc: "정리정돈 없이 물건들이 한곳에 뒤섞여 매번 파우치를 다 쏟아부어야 하나요?"
+      title: "Cosmetics mixed together",
+      desc: "All your cosmetic bottles, lipsticks and eye shadows are mixed up in a single dark pile."
     },
     {
       icon: <EyeOff className="text-red-400" size={24} />,
-      title: "필요한 화장품을 찾기 어렵다",
-      desc: "바쁜 여행지 아침, 립스틱 하나 찾느라 5분 이상 시간을 낭비하진 않으셨나요?"
+      title: "Wasted time searching",
+      desc: "Diving deep inside your bag on small hotel vanities wasting precious travel minutes."
     },
     {
       icon: <HeartCrack className="text-red-400" size={24} />,
-      title: "브러쉬가 눌려 망가진다",
-      desc: "다른 화장품 무게에 눌려 애지중지하던 비싼 메이크업 브러쉬가 망가진 적 있으시죠?"
+      title: "Damaged makeup brushes",
+      desc: "Expensive brushes get crushed under other beauty tools and powders, damaging bristles."
     },
     {
       icon: <Briefcase className="text-red-400" size={24} />,
-      title: "짐이 많아 가방이 복잡하다",
-      desc: "뚱뚱하게 불어난 파우치가 캐리어와 가방의 넓은 공간을 낭비하고 무겁게 만듭니다."
+      title: "Leaking products",
+      desc: "One loose lid leads to foundation leaks soaking into your clothing inside the suitcase."
     }
   ]
 
@@ -29,13 +29,13 @@ export default function PainPoints() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-            THE EMOTION
+            THE FRUSTRATION
           </span>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-            여행 갈 때 <br className="sm:hidden" /> 이런 경험 있으신가요?
+            Tired of messy travel bags?
           </h2>
           <p className="text-neutral-600 font-medium text-base md:text-lg mt-4">
-            기존 파우치들의 고질적인 불편함, 더 우아한 방법으로 해결할 수 있습니다.
+            Traditional bags create chaos and turn travel preparation into a stressful task.
           </p>
         </div>
 

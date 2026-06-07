@@ -1,71 +1,55 @@
-import { Package, Maximize2, Shield } from 'lucide-react'
+'use client'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-brand-black">
-      {/* Background Image with Dark Premium Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out scale-105"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.75)), url('images/hero_lifestyle.png')` }}
-      />
+    <section className="relative w-full h-screen overflow-hidden bg-brand-black flex items-center">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
+        poster="images/hero_lifestyle.png"
+      >
+        <source 
+          src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0227e338d3c9f2e707e0b5f1e843c0d&profile_id=139&oauth2_token_id=57447761" 
+          type="video/mp4" 
+        />
+      </video>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
-        {/* Editorial Subtitle Badge */}
-        <span className="inline-flex items-center gap-1.5 px-4.5 py-1.5 bg-brand-lavender/25 border border-brand-lavender/35 rounded-full text-brand-lavender text-xs md:text-sm font-semibold tracking-wider uppercase mb-8 shadow-sm">
-          Premium Travel Organizer Pouch
-        </span>
+      {/* Decorative gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-brand-black/40 z-10" />
 
-        {/* Hero Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-extrabold text-white leading-tight tracking-tight mb-8">
-          흩어진 여행짐을 <br className="sm:hidden" />
-          <span className="text-brand-lavender">하나로</span>
+      {/* Hero Content */}
+      <div className="max-w-7xl mx-auto px-8 w-full text-left relative z-20 mt-16">
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 mb-6 text-white text-xs md:text-sm font-semibold tracking-wider uppercase">
+          <span className="text-brand-lavender font-bold">●</span>
+          <span>ARLLOY 글로벌 라이프스타일 스탠다드</span>
+        </div>
+        
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-heading font-extrabold text-white leading-[1.05] tracking-tight mb-6 max-w-4xl">
+          정리는 완벽하게.<br />
+          이동은 자유롭게.
         </h1>
-
-        {/* Hero Subcopy */}
-        <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-medium max-w-2xl leading-relaxed mb-12">
-          화장품부터 브러쉬, 충전기까지. <br />
-          여행에 필요한 모든 것을 깔끔하고 우아하게 정리하세요.
+        <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-light max-w-2xl leading-relaxed mb-10">
+          여행과 일상을 위해 세심하게 설계된 에센셜. 현대의 노마드, 프로페셔널, 그리고 자주 여행을 떠나는 이들을 위해 만듭니다.
         </p>
+        <div className="flex gap-4">
+          <a 
+            href="#collection" 
+            className="inline-flex items-center justify-center bg-brand-lavender text-white hover:bg-brand-lavender-dark text-xs md:text-sm font-extrabold uppercase tracking-wider px-8 py-4.5 rounded-full transition-all duration-300 shadow-lg hover:scale-[1.02] hover:shadow-brand-lavender/20"
+          >
+            컬렉션 쇼핑하기
+          </a>
+        </div>
+      </div>
 
-        {/* Call to Action Button */}
-        <a 
-          href="#checkout" 
-          className="inline-flex items-center justify-center bg-brand-lavender text-white hover:bg-brand-lavender-hover text-base md:text-lg font-bold px-10 py-5 rounded-full shadow-lg shadow-brand-lavender/20 transform hover:-translate-y-0.5 transition-all duration-300 mb-20"
-        >
-          지금 구매하기
-        </a>
-
-        {/* USP Badges */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl mt-6 border-t border-white/10 pt-10">
-          <div className="flex flex-col items-center gap-3 text-white">
-            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-brand-lavender">
-              <Package size={22} />
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-sm tracking-wide">대용량 수납</h3>
-              <p className="text-xs text-neutral-400 mt-1">여행짐 부피를 획기적으로 축소</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center gap-3 text-white">
-            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-brand-lavender">
-              <Maximize2 size={22} />
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-sm tracking-wide">세워서 보관</h3>
-              <p className="text-xs text-neutral-400 mt-1">쏟아질 염려 없는 직관적인 자립</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center gap-3 text-white">
-            <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-brand-lavender">
-              <Shield size={22} />
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-sm tracking-wide">생활방수 원단</h3>
-              <p className="text-xs text-neutral-400 mt-1">화장품 오염 및 침수 완벽 방지</p>
-            </div>
-          </div>
+      {/* Animated scroll indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/40 hover:text-white/80 transition-colors duration-300 cursor-pointer">
+        <span className="text-[10px] uppercase font-bold tracking-widest">스크롤하여 탐색</span>
+        <div className="w-5 h-8 border border-white/20 rounded-full flex justify-center p-1">
+          <div className="w-1.5 h-1.5 bg-brand-lavender rounded-full animate-bounce" />
         </div>
       </div>
     </section>

@@ -1,89 +1,116 @@
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Mail, Instagram, Twitter, Facebook } from 'lucide-react'
 
 export default function Footer() {
-  const specs = [
-    { label: "제품명", val: "ARLLOY Travel Organizer Pouch" },
-    { label: "크기", val: "가로 22cm x 세로 16cm x 폭 7cm" },
-    { label: "무게", val: "약 120g (초경량)" },
-    { label: "소재", val: "겉감: 고밀도 나일론 (PVC 발수코팅), 안감: 이중방수 나일론" },
-    { label: "색상", val: "웜 아이보리, 차콜 블랙, 클래식 브라운" },
-    { label: "제조국", val: "대한민국 디자인 / 중국 OEM" },
-    { label: "품질보증", val: "제품 수령 후 1년간 무상 A/S 지원" }
+  const shopLinks = [
+    { label: '트래블 오거나이저', href: '#collection' },
+    { label: '뷰티 파우치', href: '#collection' },
+    { label: '뷰티 디바이스', href: '#collection' },
+    { label: '테크 슬리브', href: '#collection' },
+    { label: '트래블 액세서리', href: '#collection' },
+    { label: '에브리데이 캐리 팩', href: '#collection' },
+  ]
+
+  const brandLinks = [
+    { label: '브랜드 철학', href: '#philosophy' },
+    { label: '시그니처 제품', href: '#signature' },
+    { label: 'ARLLOY 스탠다드', href: '#story' },
+    { label: '고객 리뷰', href: '#reviews' },
+  ]
+
+  const supportLinks = [
+    { label: '글로벌 고객센터', href: '#' },
+    { label: '배송 정책', href: '#' },
+    { label: '교환 및 반품', href: '#' },
+    { label: '자주 묻는 질문(FAQ)', href: '#' },
   ]
 
   return (
-    <footer className="bg-brand-black text-white pt-20 pb-12 border-t border-white/[0.05]">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
-          {/* Brand Info & Contacts */}
-          <div className="lg:col-span-5 flex flex-col justify-between">
-            <div>
-              <div className="flex flex-col items-start mb-6">
-                <img 
-                  src="images/logo.png" 
-                  alt="arlloy logo" 
-                  className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-              <p className="text-neutral-400 font-medium text-xs md:text-sm leading-relaxed max-w-sm mb-8">
-                우리는 일상과 여정의 경계를 우아하게 채우는 고품격 오거나이징 툴을 연구합니다.
+    <footer className="bg-white text-brand-black pt-24 pb-12 border-t border-neutral-100">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        {/* Top Section: Brand & Link Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
+          
+          {/* Brand Col */}
+          <div className="lg:col-span-4 flex flex-col gap-6">
+            <span className="text-2xl font-heading font-extrabold tracking-tight text-brand-black">
+              ARLLOY.
+            </span>
+            <p className="text-neutral-500 font-medium text-xs md:text-sm leading-relaxed max-w-sm">
+              우리는 공간의 조화와 이동의 자유를 위한 도구를 디자인합니다. ARLLOY는 현대의 노마드, 프로페셔널, 그리고 여행자가 더 자유롭게 움직일 수 있도록 돕습니다.
+            </p>
+            {/* Social Links */}
+            <div className="flex gap-4 text-neutral-400">
+              <a href="#" className="hover:text-brand-lavender transition-colors"><Instagram size={18} /></a>
+              <a href="#" className="hover:text-brand-lavender transition-colors"><Twitter size={18} /></a>
+              <a href="#" className="hover:text-brand-lavender transition-colors"><Facebook size={18} /></a>
+            </div>
+          </div>
+
+          {/* Shop Column */}
+          <div className="lg:col-span-2.5 md:col-span-1">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">쇼핑</h4>
+            <ul className="space-y-4">
+              {shopLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="text-xs font-semibold text-neutral-600 hover:text-brand-lavender transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Brand Column */}
+          <div className="lg:col-span-2.5 md:col-span-1">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">브랜드</h4>
+            <ul className="space-y-4">
+              {brandLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="text-xs font-semibold text-neutral-600 hover:text-brand-lavender transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Help/Support Column */}
+          <div className="lg:col-span-3 md:col-span-1">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">고객지원</h4>
+            <ul className="space-y-4">
+              {supportLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="text-xs font-semibold text-neutral-600 hover:text-brand-lavender transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-6 text-xs text-neutral-500 font-medium space-y-2">
+              <p className="flex items-center gap-2">
+                <Mail size={12} className="text-brand-lavender" /> hello@arlloy.com
+              </p>
+              <p className="flex items-center gap-2">
+                <MapPin size={12} className="text-brand-lavender" /> 서울특별시 강남구
               </p>
             </div>
-            
-            <div className="space-y-3.5 text-xs md:text-sm text-neutral-500 font-medium">
-              <div className="flex items-center gap-3">
-                <Phone size={14} className="text-brand-lavender" />
-                <span>CS Center: 1644-0000 (평일 10:00 - 17:00)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail size={14} className="text-brand-lavender" />
-                <span>Email: support@arlloy.com</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin size={14} className="text-brand-lavender" />
-                <span>서울특별시 강남구 테헤란로 123, 5층</span>
-              </div>
-            </div>
           </div>
 
-          {/* Product Specifications Table (Naver Shopping Optimization) */}
-          <div className="lg:col-span-7">
-            <h4 className="text-sm font-heading font-bold text-neutral-300 uppercase tracking-widest block mb-6">
-              Product Specifications
-            </h4>
-            <div className="border border-white/10 rounded-2xl overflow-hidden">
-              <table className="w-full text-left border-collapse text-xs md:text-sm">
-                <tbody>
-                  {specs.map((spec, idx) => (
-                    <tr 
-                      key={idx} 
-                      className={`border-b border-white/[0.05] last:border-b-0 hover:bg-white/[0.02] transition-colors`}
-                    >
-                      <td className="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">
-                        {spec.label}
-                      </td>
-                      <td className="p-4 text-neutral-300 font-semibold">
-                        {spec.val}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
         </div>
 
-        {/* E-Commerce Disclosures */}
-        <div className="border-t border-white/[0.05] pt-8 flex flex-col md:flex-row items-baseline justify-between gap-6 text-[10px] text-neutral-600 font-medium">
+        {/* Bottom Section: Business Disclosures */}
+        <div className="border-t border-neutral-100 pt-8 flex flex-col md:flex-row items-baseline justify-between gap-6 text-[10px] text-neutral-400 font-medium">
           <div className="space-y-1 leading-relaxed">
-            <p>상호명: 주식회사 알로이코리아 | 대표자: 김알로 | 사업자등록번호: 000-00-00000</p>
-            <p>통신판매업신고번호: 제2026-서울강남-0000호 | 개인정보보호책임자: 박우아</p>
+            <p>주식회사 아르로이코리아 | 대표자: 박우아 | 사업자등록번호: 123-88-01234</p>
+            <p>통신판매업신고번호: 제2026-서울강남-1234호 | 개인정보보호책임자: 박우아</p>
             <p>본 사이트의 모든 디자인 및 콘텐츠는 저작권법의 보호를 받으며 무단 복제를 금지합니다.</p>
           </div>
-          <div className="text-neutral-500 text-xs">
+          <div className="text-neutral-400 text-xs font-semibold">
             &copy; {new Date().getFullYear()} ARLLOY. All rights reserved.
           </div>
         </div>
+
       </div>
     </footer>
   )
