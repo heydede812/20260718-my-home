@@ -17,12 +17,12 @@ export default function BrandStory() {
             <div className="relative aspect-[16/10] bg-neutral-900 rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl group">
               <img 
                 src="images/mockup_billboard.jpg" 
-                alt="ARLLOY 브랜드 빌보드 캠페인" 
+                alt="아를로이 브랜드 빌보드 캠페인" 
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                 loading="lazy"
               />
               <div className="absolute bottom-4 left-4 bg-brand-black/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full text-[10px] text-white font-bold tracking-wider">
-                ARLLOY 빌보드 캠페인
+                아를로이 빌보드 캠페인
               </div>
             </div>
             
@@ -31,7 +31,7 @@ export default function BrandStory() {
               <div className="relative aspect-square bg-neutral-900 rounded-[2rem] overflow-hidden border border-white/5 shadow-lg group">
                 <img 
                   src="images/mockup_wood_logo.png" 
-                  alt="ARLLOY 브랜드 공간 슬랫 월" 
+                  alt="아를로이 브랜드 공간 슬랫 월" 
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   loading="lazy"
                 />
@@ -39,7 +39,7 @@ export default function BrandStory() {
               <div className="relative aspect-square bg-neutral-900 rounded-[2rem] overflow-hidden border border-white/5 shadow-lg group">
                 <img 
                   src="images/mockup_signboard.png" 
-                  alt="ARLLOY 시그니처 플래그십 스토어" 
+                  alt="아를로이 시그니처 플래그십 스토어" 
                   className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   loading="lazy"
                 />
@@ -53,7 +53,7 @@ export default function BrandStory() {
               브랜드 선언
             </span>
             <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-none mb-6">
-              ARLLOY 스탠다드
+              아를로이 스탠다드
             </h2>
             
             <div className="space-y-6 text-neutral-300 font-medium text-sm sm:text-base leading-relaxed mb-10">
@@ -61,7 +61,7 @@ export default function BrandStory() {
                 우리는 프리미엄 디자인이란 더하는 것이 아니라 정제하는 것이라고 믿습니다. 컬렉션의 모든 지퍼, 파티션, 봉제선, 안감은 글로벌 내구성 표준을 충족하기 위해 혹독한 여행 환경 테스트를 거쳤습니다.
               </p>
               <p>
-                ARLLOY는 가방 속 무질서로부터 현대의 여행자와 전문가들을 해방시키기 위해 태어났습니다. 건축학적 공간 분할을 접목하여, 당신의 일상적 움직임에 명확함과 자유로움을 제공합니다.
+                아를로이는 가방 속 무질서로부터 현대의 여행자와 전문가들을 해방시키기 위해 태어났습니다. 건축학적 공간 분할을 접목하여, 당신의 일상적 움직임에 명확함과 자유로움을 제공합니다.
               </p>
             </div>
 

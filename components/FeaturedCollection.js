@@ -11,8 +11,8 @@ export default function FeaturedCollection() {
   const products = [
     {
       id: 'travel-org',
-      name: 'ARLLOY 트래블 오거나이저',
-      category: '트래블 에센셜',
+      name: '아를로이 트래블 오거나이저',
+      category: '트래블 악세사리',
       price: 59,
       rating: 5,
       reviewsCount: 184,
@@ -21,8 +21,8 @@ export default function FeaturedCollection() {
     },
     {
       id: 'beauty-org',
-      name: 'ARLLOY 뷰티 파우치',
-      category: '뷰티 오거나이저',
+      name: '아를로이 뷰티 파우치',
+      category: '뷰티 파우치',
       price: 49,
       rating: 4.9,
       reviewsCount: 92,
@@ -31,8 +31,8 @@ export default function FeaturedCollection() {
     },
     {
       id: 'beauty-device',
-      name: 'ARLLOY 이로이 뷰티 디바이스',
-      category: '뷰티 디바이스',
+      name: '아를로이 이로이 뷰티 디바이스',
+      category: '뷰티디바이스',
       price: 129,
       rating: 5,
       reviewsCount: 38,
@@ -41,8 +41,8 @@ export default function FeaturedCollection() {
     },
     {
       id: 'tech-org',
-      name: 'ARLLOY 테크 오거나이저',
-      category: '포터블 테크',
+      name: '아를로이 테크 오거나이저',
+      category: '트래블 악세사리',
       price: 45,
       rating: 4.8,
       reviewsCount: 61,
@@ -51,8 +51,8 @@ export default function FeaturedCollection() {
     },
     {
       id: 'travel-acc',
-      name: 'ARLLOY 트래블 액세서리 세트',
-      category: '트래블 에센셜',
+      name: '아를로이 트래블 액세서리 세트',
+      category: '트래블 악세사리',
       price: 29,
       rating: 5,
       reviewsCount: 47,
@@ -61,8 +61,8 @@ export default function FeaturedCollection() {
     },
     {
       id: 'lifestyle-pack',
-      name: 'ARLLOY 포터블 라이프스타일 팩',
-      category: '에브리데이 캐리',
+      name: '아를로이 포터블 라이프스타일 팩',
+      category: '트래블 악세사리',
       price: 69,
       rating: 4.9,
       reviewsCount: 115,

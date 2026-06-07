@@ -34,7 +34,7 @@ export default function Newsletter() {
         </span>
         
         <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight mb-4">
-          ARLLOY 커뮤니티에 가입하세요
+          아를로이 커뮤니티에 가입하세요
         </h2>
         <p className="text-neutral-500 font-medium text-sm sm:text-base max-w-lg mx-auto leading-relaxed mb-10">
           구독하고 여행 정리 팁, 신제품 출시 소식, 그리고 첫 주문에 적용 가능한 <strong className="text-brand-lavender">10% 특별 할인 코드</strong>를 받아보세요.

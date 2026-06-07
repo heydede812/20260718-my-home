@@ -2,18 +2,15 @@ import { MapPin, Mail, Instagram, Twitter, Facebook } from 'lucide-react'
 
 export default function Footer() {
   const shopLinks = [
-    { label: '트래블 오거나이저', href: '#collection' },
     { label: '뷰티 파우치', href: '#collection' },
-    { label: '뷰티 디바이스', href: '#collection' },
-    { label: '테크 슬리브', href: '#collection' },
-    { label: '트래블 액세서리', href: '#collection' },
-    { label: '에브리데이 캐리 팩', href: '#collection' },
+    { label: '뷰티디바이스', href: '#collection' },
+    { label: '트래블 악세사리', href: '#collection' },
   ]
 
   const brandLinks = [
     { label: '브랜드 철학', href: '#philosophy' },
     { label: '시그니처 제품', href: '#signature' },
-    { label: 'ARLLOY 스탠다드', href: '#story' },
+    { label: '아를로이 스탠다드', href: '#story' },
     { label: '고객 리뷰', href: '#reviews' },
   ]
 
@@ -34,10 +31,10 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <span className="text-2xl font-heading font-extrabold tracking-tight text-brand-black">
-              ARLLOY.
+              아를로이.
             </span>
             <p className="text-neutral-500 font-medium text-xs md:text-sm leading-relaxed max-w-sm">
-              우리는 공간의 조화와 이동의 자유를 위한 도구를 디자인합니다. ARLLOY는 현대의 노마드, 프로페셔널, 그리고 여행자가 더 자유롭게 움직일 수 있도록 돕습니다.
+              우리는 공간의 조화와 이동의 자유를 위한 도구를 디자인합니다. 아를로이는 현대의 노마드, 프로페셔널, 그리고 여행자가 더 자유롭게 움직일 수 있도록 돕습니다.
             </p>
             {/* Social Links */}
             <div className="flex gap-4 text-neutral-400">
@@ -102,12 +99,12 @@ export default function Footer() {
         {/* Bottom Section: Business Disclosures */}
         <div className="border-t border-neutral-100 pt-8 flex flex-col md:flex-row items-baseline justify-between gap-6 text-[10px] text-neutral-400 font-medium">
           <div className="space-y-1 leading-relaxed">
-            <p>주식회사 아르로이코리아 | 대표자: 박우아 | 사업자등록번호: 123-88-01234</p>
+            <p>주식회사 아를로이코리아 | 대표자: 박우아 | 사업자등록번호: 123-88-01234</p>
             <p>통신판매업신고번호: 제2026-서울강남-1234호 | 개인정보보호책임자: 박우아</p>
             <p>본 사이트의 모든 디자인 및 콘텐츠는 저작권법의 보호를 받으며 무단 복제를 금지합니다.</p>
           </div>
           <div className="text-neutral-400 text-xs font-semibold">
-            &copy; {new Date().getFullYear()} ARLLOY. All rights reserved.
+            &copy; {new Date().getFullYear()} 아를로이. All rights reserved.
           </div>
         </div>
 

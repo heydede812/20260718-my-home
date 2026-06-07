@@ -48,7 +48,7 @@ export default function Header() {
               scrolled ? 'text-brand-black' : 'text-white'
             }`}
           >
-            ARLLOY.
+            아를로이.
           </span>
         </a>
 

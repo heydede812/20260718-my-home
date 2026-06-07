@@ -252,9 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btnBuySig.addEventListener('click', () => {
             addProductToCart(
                 'travel-org',
-                'ARLLOY 트래블 오거나이저',
+                '아를로이 트래블 오거나이저',
                 59,
-                '트래블 에센셜',
+                '트래블 악세사리',
                 'images/아이보리브랜드.png'
             );
         });

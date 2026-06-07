@@ -45,7 +45,7 @@ export default function Comparison() {
             Before vs After
           </h2>
           <p className="text-neutral-500 font-medium text-sm md:text-base mt-4">
-            Compare a traditional pouch with the organized simplicity of ARLLOY.
+            Compare a traditional pouch with the organized simplicity of 아를로이.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Comparison() {
             <thead>
               <tr className="border-b border-neutral-100 bg-neutral-50">
                 <th className="p-6 md:p-8 font-heading font-bold text-brand-black text-sm md:text-base">비교 항목</th>
-                <th className="p-6 md:p-8 font-heading font-extrabold text-brand-lavender text-sm md:text-base bg-brand-lavender/[0.03]">ARLLOY</th>
+                <th className="p-6 md:p-8 font-heading font-extrabold text-brand-lavender text-sm md:text-base bg-brand-lavender/[0.03]">아를로이</th>
                 <th className="p-6 md:p-8 font-heading font-bold text-brand-gray text-sm md:text-base">일반 파우치</th>
               </tr>
             </thead>

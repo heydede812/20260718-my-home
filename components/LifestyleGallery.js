@@ -46,7 +46,7 @@ export default function LifestyleGallery() {
             당신의 모든 순간을 위해
           </h2>
           <p className="text-neutral-500 font-medium text-sm sm:text-base mt-4">
-            이른 아침의 공항철도부터 매일의 작업실 공간까지, ARLLOY는 모든 순간에 자연스럽게 녹아듭니다.
+            이른 아침의 공항철도부터 매일의 작업실 공간까지, 아를로이는 모든 순간에 자연스럽게 녹아듭니다.
           </p>
         </div>
 

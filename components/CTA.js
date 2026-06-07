@@ -18,7 +18,7 @@ export default function CTA() {
         </h2>
         
         <p className="text-neutral-400 font-light text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          ARLLOY와 함께 공간의 자유와 일상의 효율을 경험해 보세요. 당신의 소지품 보관 기준을 한 단계 높여드립니다.
+          아를로이와 함께 공간의 자유와 일상의 효율을 경험해 보세요. 당신의 소지품 보관 기준을 한 단계 높여드립니다.
         </p>
 
         <div className="flex justify-center mb-16">
@@ -26,7 +26,7 @@ export default function CTA() {
             href="#collection"
             className="bg-brand-lavender text-white hover:bg-brand-lavender-dark text-xs md:text-sm font-extrabold uppercase tracking-wider px-10 py-5 rounded-full shadow-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-brand-lavender/25"
           >
-            ARLLOY 쇼핑하기
+            아를로이 쇼핑하기
           </a>
         </div>
 

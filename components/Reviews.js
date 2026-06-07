@@ -6,14 +6,14 @@ export default function Reviews() {
   const reviews = [
     {
       title: "디지털 노마드의 필수템.",
-      text: "듀얼 충전기, 어댑터, 스킨케어 제품과 열쇠를 늘 들고 다닙니다. 테크 수납칸은 케이블을 완벽하게 수납하고, 반대편은 크림이 터지지 않게 보호해 줍니다. ARLLOY 덕분에 가방 공간이 확 줄었어요.",
+      text: "듀얼 충전기, 어댑터, 스킨케어 제품과 열쇠를 늘 들고 다닙니다. 테크 수납칸은 케이블을 완벽하게 수납하고, 반대편은 크림이 터지지 않게 보호해 줍니다. 아를로이 덕분에 가방 공간이 확 줄었어요.",
       author: "Samantha K.",
       job: "디지털 노마드 & 디자이너",
       tag: "구매자 인증"
     },
     {
       title: "더 이상 호텔 수건 위에 늘어놓지 마세요.",
-      text: "예전에는 아이라이너 하나 찾으려고 호텔 화장대에 화장품을 전부 쏟아붓곤 했어요. ARLLOY를 쓰고 나서는 지퍼만 열면 옷장 선반처럼 평평하게 펼쳐지니 아침 준비 시간이 혁신적으로 바뀌었습니다.",
+      text: "예전에는 아이라이너 하나 찾으려고 호텔 화장대에 화장품을 전부 쏟아붓곤 했어요. 아를로이를 쓰고 나서는 지퍼만 열면 옷장 선반처럼 평평하게 펼쳐지니 아침 준비 시간이 혁신적으로 바뀌었습니다.",
       author: "이혜진",
       job: "여행 저널리스트",
       tag: "구매자 인증"
@@ -48,7 +48,7 @@ export default function Reviews() {
               글로벌 여행자들의 찬사
             </h2>
             <p className="text-neutral-500 font-medium text-sm sm:text-base max-w-lg leading-relaxed">
-              ARLLOY와 함께 여행의 정리를 완성한 디지털 노마드, 뷰티 전문가, 그리고 비즈니스 여행자들의 생생한 리뷰를 확인해 보세요.
+              아를로이와 함께 여행의 정리를 완성한 디지털 노마드, 뷰티 전문가, 그리고 비즈니스 여행자들의 생생한 리뷰를 확인해 보세요.
             </p>
           </div>
           
@@ -67,7 +67,7 @@ export default function Reviews() {
             
             <div className="text-left hidden sm:block">
               <span className="text-5xl sm:text-6xl font-heading font-extrabold text-brand-black block">98%</span>
-              <span className="text-xs text-neutral-400 font-bold uppercase tracking-wider block my-1">ARLLOY 추천 의사</span>
+              <span className="text-xs text-neutral-400 font-bold uppercase tracking-wider block my-1">아를로이 추천 의사</span>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Reviews() {
         {/* UGC Photos Grid */}
         <div className="mb-20">
           <h3 className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">
-            소셜 미디어 공유 #ARLLOY스탠다드
+            소셜 미디어 공유 #아를로이스탠다드
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {ugcImages.map((img, idx) => (

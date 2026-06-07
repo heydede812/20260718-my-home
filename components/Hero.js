@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-8 w-full text-left relative z-20 mt-16">
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 mb-6 text-white text-xs md:text-sm font-semibold tracking-wider uppercase">
           <span className="text-brand-lavender font-bold">●</span>
-          <span>ARLLOY 글로벌 라이프스타일 스탠다드</span>
+          <span>아를로이 글로벌 라이프스타일 스탠다드</span>
         </div>
         
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-heading font-extrabold text-white leading-[1.05] tracking-tight mb-6 max-w-4xl">

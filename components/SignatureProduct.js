@@ -10,8 +10,8 @@ export default function SignatureProduct() {
 
   const signatureProduct = {
     id: 'travel-org',
-    name: 'ARLLOY 트래블 오거나이저',
-    category: '트래블 에센셜',
+    name: '아를로이 트래블 오거나이저',
+    category: '트래블 악세사리',
     price: 59,
     rating: 5,
     reviewsCount: 184,
@@ -83,7 +83,7 @@ export default function SignatureProduct() {
               시그니처 제품
             </span>
             <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight mb-4">
-              ARLLOY 트래블 오거나이저
+              아를로이 트래블 오거나이저
             </h2>
             <div className="flex items-center gap-2 mb-6">
               <span className="text-lg font-heading font-extrabold text-brand-black">$59.00</span>

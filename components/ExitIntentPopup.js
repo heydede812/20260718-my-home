@@ -37,7 +37,7 @@ export default function ExitIntentPopup() {
             첫 주문 10% 할인 혜택 받기
           </h3>
           <p className="text-neutral-500 font-medium text-xs md:text-sm leading-relaxed">
-            뉴스레터를 구독하고 ARLLOY 첫 주문에 적용 가능한 10% 할인 코드와 여행 정리 노하우를 받아보세요.
+            뉴스레터를 구독하고 아를로이 첫 주문에 적용 가능한 10% 할인 코드와 여행 정리 노하우를 받아보세요.
           </p>
         </div>
         <form 

@@ -23,9 +23,9 @@ export default function StickyBuyBar() {
       }`}
     >
       <div className="flex items-center gap-4">
-        <img src="images/pouch_pink_new.jpg" alt="ARLLOY Warm Ivory" className="w-12 h-12 object-contain bg-white border border-neutral-100 rounded" />
+        <img src="images/pouch_pink_new.jpg" alt="아를로이 웜 아이보리" className="w-12 h-12 object-contain bg-white border border-neutral-100 rounded" />
         <div className="hidden sm:block">
-          <h4 className="text-sm font-heading font-bold text-brand-black">ARLLOY 트래블 오거나이저</h4>
+          <h4 className="text-sm font-heading font-bold text-brand-black">아를로이 트래블 오거나이저</h4>
           <p className="text-xs text-neutral-500">선택된 색상: 웜 아이보리</p>
         </div>
       </div>

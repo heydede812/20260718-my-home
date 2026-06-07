@@ -38,7 +38,7 @@ export default function Solution() {
             THE SOLUTION
           </span>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-            Meet ARLLOY.
+            Meet 아를로이.
           </h2>
           <p className="text-neutral-600 font-medium text-base md:text-lg mt-4">
             Experience a smart structural design that adapts to your cosmetic shapes and compresses down flat.
