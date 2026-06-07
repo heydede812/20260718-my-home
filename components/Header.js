@@ -28,11 +28,24 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a 
           href="#" 
-          className={`font-heading text-2xl tracking-wider font-extrabold uppercase transition-colors duration-300 ${
-            scrolled ? 'text-brand-black' : 'text-white'
-          }`}
+          className="flex flex-col items-start transition-transform duration-300 hover:scale-[1.02]"
         >
-          ARLLOY
+          <span 
+            className={`font-heading text-xl font-extrabold lowercase transition-colors duration-300 leading-none ${
+              scrolled 
+                ? 'text-brand-black' 
+                : 'text-white'
+            }`}
+          >
+            arlloy
+          </span>
+          <span 
+            className={`font-body text-[8px] font-bold tracking-[0.22em] uppercase transition-colors duration-300 mt-0.5 leading-none ${
+              scrolled ? 'text-brand-gray' : 'text-white/80'
+            }`}
+          >
+            NATURALLY YOURS
+          </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

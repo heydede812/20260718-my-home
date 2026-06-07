@@ -139,23 +139,54 @@ section {
     width: 100%;
 }
 
-.logo {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
     transition: var(--transition-smooth);
 }
 
-#main-header.scrolled .logo {
+.logo-container:hover {
+    transform: scale(1.02);
+}
+
+.logo-main {
+    font-family: var(--font-heading);
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-smooth);
+    text-transform: lowercase;
+}
+
+.logo-sub {
+    font-family: var(--font-body);
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: #ffffff;
+    opacity: 0.85;
+    margin-top: 3px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    transition: var(--transition-smooth);
+    text-transform: uppercase;
+}
+
+#main-header.scrolled .logo-main {
     background: linear-gradient(135deg, var(--color-dark), var(--color-gold));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
+    color: transparent;
 }
 
-.logo:hover {
-    transform: scale(1.02);
+#main-header.scrolled .logo-sub {
+    color: var(--color-dark-muted);
+    opacity: 0.9;
+    text-shadow: none;
 }
 
 .nav-links {
@@ -1756,12 +1787,31 @@ footer {
     max-width: 320px;
 }
 
-.footer-logo {
-    display: block;
-    font-size: 2rem;
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-logo-main {
+    font-family: var(--font-heading);
+    font-size: 1.85rem;
     font-weight: 800;
     color: var(--color-light);
-    margin-bottom: 20px;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+.footer-logo-sub {
+    font-family: var(--font-body);
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: rgba(253, 253, 252, 0.5);
+    margin-top: 5px;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .footer-brand-info p {
@@ -2178,82 +2228,7 @@ footer {
     color: rgba(253, 253, 251, 0.65);
 }
 
-/* Size Guide Section */
-.size-section {
-    background-color: var(--color-light);
-    border-top: 1px solid var(--border-light);
-}
 
-.size-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.size-image-wrapper {
-    background-color: var(--color-sand);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-lg);
-    padding: 30px;
-    box-shadow: var(--shadow-sm);
-    text-align: center;
-    transition: transform var(--transition-smooth);
-}
-
-.size-image-wrapper:hover {
-    transform: translateY(-3px);
-}
-
-.size-img {
-    max-width: 100%;
-    border-radius: var(--radius-md);
-    display: block;
-    margin: 0 auto;
-}
-
-.size-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.size-spec-card {
-    background-color: var(--color-sand);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-md);
-    padding: 24px;
-    box-shadow: var(--shadow-sm);
-    transition: all var(--transition-smooth);
-}
-
-.size-spec-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-gold);
-    box-shadow: var(--shadow-md);
-}
-
-.size-spec-card h3 {
-    font-size: 1.2rem;
-    color: var(--color-dark);
-    margin-bottom: 8px;
-}
-
-.size-badge {
-    display: inline-block;
-    padding: 4px 12px;
-    background-color: var(--color-gold-light);
-    color: var(--color-gold);
-    border: 1px solid rgba(179, 143, 107, 0.2);
-    border-radius: var(--radius-full);
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.size-spec-card p {
-    font-size: 0.95rem;
-    color: var(--color-dark-muted);
-}
 
 
 /* ------------------------------------------------------------- */
@@ -2450,10 +2425,7 @@ footer {
         gap: 40px;
     }
 
-    .size-cards-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+
 }
 
 @media (max-width: 480px) {

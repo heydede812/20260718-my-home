@@ -3,448 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARLLOY | 여행의 준비를 더 우아하게</title>
-    <meta name="description" content="여행을 위한 프리미엄 화장품 파우치 ARLLOY Travel Organizer Pouch. 대용량 수납, 세워서 보관, 생활방수 원단으로 여행의 준비를 더욱 우아하고 스마트하게 정리하세요.">
-    <meta name="keywords" content="화장품파우치, 여행용파우치, 프리미엄파우치, 메이크업파우치, 수납파우치, ARLLOY, 알로이파우치">
-    
-    <!-- Open Graph for Social Share -->
-    <meta property="og:title" content="ARLLOY | 여행의 준비를 더 우아하게">
-    <meta property="og:description" content="대용량 수납, 세워서 보관, 생활방수 원단으로 여행의 준비를 더욱 우아하고 스마트하게 정리하세요.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://arlloy.com">
-    <meta property="og:image" content="images/pouch_black_open.png">
-    
+    <title>arlloy | 결을 따라 접다, 한눈에 보이다</title>
+    <meta name="description" content="결대로 접어지는 혁신적인 구조로 내부 수납물을 한눈에 확인하고 깔끔하게 정리하는 프리미엄 폴딩 파우치 arlloy.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
     <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            white: "#ffffff",
-                            black: "#0a0a0a",
-                            charcoal: "#171717",
-                            "dark-gray": "#262626",
-                            gray: "#737373",
-                            "light-gray": "#f5f5f5",
-                            lavender: {
-                                light: "#f5f3ff",
-                                DEFAULT: "#8b5cf6",
-                                dark: "#7c3aed",
-                                hover: "#6d28d9"
-                            }
-                        }
-                    },
-                    fontFamily: {
-                        heading: ["Outfit", "Noto Sans KR", "sans-serif"],
-                        body: ["Inter", "Noto Sans KR", "sans-serif"],
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- Custom Style Resets & Base Overrides -->
-    <style>
-        body {
-            font-family: 'Inter', 'Noto Sans KR', sans-serif;
-        }
-        h1, h2, h3, h4, .logo {
-            font-family: 'Outfit', 'Noto Sans KR', sans-serif;
-        }
-        .text-gradient {
-            background: linear-gradient(135deg, #ffffff, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-
-    <!-- JSON-LD Product Schema for Naver Shopping SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "ARLLOY Travel Organizer Pouch",
-        "image": "images/pouch_black_open.png",
-        "description": "여행의 준비를 더 우아하게. 대용량 수납, 세워서 보관하는 생활방수 프리미엄 트래블 오거나이저 파우치.",
-        "brand": {
-            "@type": "Brand",
-            "name": "ARLLOY"
-        },
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "KRW",
-            "price": "38250",
-            "availability": "https://schema.org/InStock",
-            "url": "https://arlloy.com"
-        }
-    }
-    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-brand-black antialiased overflow-x-hidden">
+<body>
 
-    <!-- HEADER NAVIGATION -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-6 bg-transparent transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
-            <a href="#" class="logo text-2xl tracking-wider font-extrabold uppercase text-white transition-colors duration-300">
-                ARLLOY
+    <!-- Header Navigation -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-container">
+                <span class="logo-main">arlloy</span>
+                <span class="logo-sub">NATURALLY YOURS</span>
             </a>
-            
-            <nav class="hidden md:flex items-center gap-8">
-                <a href="#problems" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors duration-300">위크포인트</a>
-                <a href="#solution" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors duration-300">솔루션</a>
-                <a href="#features" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors duration-300">핵심기능</a>
-                <a href="#reviews" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors duration-300">후기</a>
-                <a href="#faq" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors duration-300">FAQ</a>
+            <nav class="nav-links">
+                <a href="#story" class="nav-link">Brand Story</a>
+                <a href="#simulator" class="nav-link">How it Works</a>
+                <a href="#structure-gallery" class="nav-link">Structure</a>
+                <a href="#colors" class="nav-link">Colors</a>
+                <a href="#pack-game" class="nav-link">Interactive Pack</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#premium-details" class="nav-link">Details</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#product-info" class="nav-link">Specs</a>
             </nav>
-            
-            <div class="flex items-center gap-4">
-                <a href="#checkout" id="header-cta" class="text-xs md:text-sm font-bold px-5 py-2.5 rounded-full bg-white text-brand-black hover:bg-brand-lavender hover:text-white shadow-md transition-all duration-300">
-                    지금 구매하기
-                </a>
+            <div class="header-actions">
+                <a href="#colors" class="btn btn-sm btn-outline">Shop Now</a>
             </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </header>
 
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="mobile-nav-links">
+            <a href="#story" class="mobile-link">Brand Story</a>
+            <a href="#simulator" class="mobile-link">How it Works</a>
+            <a href="#structure-gallery" class="mobile-link">Structure</a>
+            <a href="#colors" class="mobile-link">Colors</a>
+            <a href="#pack-game" class="mobile-link">Interactive Pack</a>
+            <a href="#features" class="mobile-link">Features</a>
+            <a href="#premium-details" class="mobile-link">Details</a>
+            <a href="#reviews" class="mobile-link">Reviews</a>
+            <a href="#product-info" class="mobile-link">Specs</a>
+            <a href="#colors" class="btn btn-primary btn-full-width">Shop Now</a>
+        </nav>
+    </div>
+
     <main>
-        <!-- SECTION 1. HERO -->
-        <section class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-brand-black">
-            <!-- Background Image with Dark Premium Overlay -->
-            <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105" 
-                 style="background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.65)), url('images/hero_lifestyle.png')">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="ambient-glow bg-pink"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge fade-in">Slim-Fit Accordion Pouch</span>
+                    <h1 class="hero-title fade-in-delay-1">
+                        부피는 줄이고<br>
+                        <span class="text-gradient">수납은 그대로.</span>
+                    </h1>
+                    <p class="hero-description fade-in-delay-2">
+                        화장품은 많은데 파우치는 뚱뚱하고 무거우셨죠? 이제 가볍게 슬림하게 정리해 보세요.
+                    </p>
+                    <div class="hero-buttons fade-in-delay-3">
+                        <a href="#colors" class="btn btn-primary">슬림핏 삼각 파우치 바로가기</a>
+                        <a href="#story" class="btn btn-text">소개 더보기 <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in-right">
+                    <div class="hero-image-wrapper">
+                        <img src="images/파우치내부-2.jpg" alt="arlloy brown folding pouch closed and open views" class="hero-img active" id="hero-main-img">
+                        <div class="floating-badge">
+                            <span class="folding-indicator"><i class="fa-solid fa-arrows-left-right"></i> 100% Flex</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
-                <!-- Subtitle Badge -->
-                <span class="inline-flex items-center gap-1.5 px-4.5 py-1.5 bg-brand-lavender/25 border border-brand-lavender/35 rounded-full text-brand-lavender text-xs md:text-sm font-semibold tracking-wider uppercase mb-8 shadow-sm">
-                    Premium Travel Organizer Pouch
+            <a href="#story" class="scroll-down" aria-label="Scroll Down">
+                <span class="mouse">
+                    <span class="wheel"></span>
                 </span>
+                <span class="arrow-text">Scroll Down</span>
+            </a>
+        </section>
 
-                <!-- Headline -->
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-heading font-extrabold text-white leading-tight tracking-tight mb-8">
-                    흩어진 여행짐을 <br class="sm:hidden" />
-                    <span class="text-gradient">하나로</span>
-                </h1>
-
-                <!-- Subcopy -->
-                <p class="text-base sm:text-lg md:text-xl text-neutral-200 font-medium max-w-2xl leading-relaxed mb-12">
-                    화장품부터 브러쉬, 충전기까지. <br />
-                    여행에 필요한 모든 것을 깔끔하고 우아하게 정리하세요.
-                </p>
-
-                <!-- CTA Button -->
-                <a href="#checkout" class="inline-flex items-center justify-center bg-brand-lavender text-white hover:bg-brand-lavender-hover text-base md:text-lg font-bold px-10 py-5 rounded-full shadow-lg shadow-brand-lavender/20 transform hover:-translate-y-0.5 transition-all duration-300 mb-20">
-                    지금 구매하기
-                </a>
-
-                <!-- USP Badges -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl mt-6 border-t border-white/10 pt-10">
-                    <div class="flex flex-col items-center gap-3 text-white">
-                        <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-brand-lavender">
-                            <i class="fa-solid fa-box-open text-lg"></i>
+        <!-- Pain Points Section -->
+        <section class="pain-points-section" id="pain-points">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">THE PROBLEM</span>
+                    <h2 class="section-title">이 파우치 저 파우치<br>계속 헤매실 건가요?</h2>
+                    <p class="section-desc">기존 파우치들의 불편함, 더 이상 참지 마세요.</p>
+                </div>
+                
+                <div class="pain-points-grid reveal-on-scroll">
+                    <div class="pain-points-list">
+                        <div class="pain-point-card">
+                            <div class="pain-icon-box">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="pain-text">
+                                <h3>소중한 화장품이 섞이고 깨질까 봐 걱정하셨나요?</h3>
+                                <p>내부 파티션이 없어 흔들리고 섞여 립스틱 뚜껑이 열리거나 섀도우가 깨지는 파우치 대참사를 방지합니다.</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-heading font-bold text-sm tracking-wide">대용량 수납</h3>
-                            <p class="text-xs text-neutral-400 mt-1">여행짐 부피를 획기적으로 축소</p>
+                        <div class="pain-point-card">
+                            <div class="pain-icon-box">
+                                <i class="fa-solid fa-minimize"></i>
+                            </div>
+                            <div class="pain-text">
+                                <h3>가방 속 공간을 너무 많이 차지하진 않나요?</h3>
+                                <p>정리할수록 불룩해지는 파우치 때문에 가방의 소중한 공간이 낭비되고 무거워집니다.</p>
+                            </div>
+                        </div>
+                        <div class="pain-point-card">
+                            <div class="pain-icon-box">
+                                <i class="fa-solid fa-arrows-spin"></i>
+                            </div>
+                            <div class="pain-text">
+                                <h3>필요한 물건을 찾기 위해 파우치를 다 뒤집으셨나요?</h3>
+                                <p>바쁜 아침이나 외출 시 립스틱 하나를 찾기 위해 모든 내용물을 쏟아부어야 하는 번거로움을 해결합니다.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="flex flex-col items-center gap-3 text-white">
-                        <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-brand-lavender">
-                            <i class="fa-solid fa-arrows-up-down text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-heading font-bold text-sm tracking-wide">세워서 보관</h3>
-                            <p class="text-xs text-neutral-400 mt-1">쏟아질 염려 없는 직관적인 자립</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col items-center gap-3 text-white">
-                        <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-brand-lavender">
-                            <i class="fa-solid fa-droplet text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-heading font-bold text-sm tracking-wide">생활방수 원단</h3>
-                            <p class="text-xs text-neutral-400 mt-1">화장품 오염 및 침수 완벽 방지</p>
+                    
+                    <div class="pain-visual-side">
+                        <div class="pain-img-frame">
+                            <img src="images/브라운브랜드-1.png" alt="arlloy pouch model use" class="pain-img">
+                            <div class="pain-badge">Say goodbye to mess</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- SECTION 2. 고객 문제 공감 -->
-        <section id="problems" class="py-24 bg-brand-light-gray">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                        THE EMOTION
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-                        여행 갈 때 <br class="sm:hidden" /> 이런 경험 있으신가요?
-                    </h2>
-                    <p class="text-neutral-600 font-medium text-base md:text-lg mt-4">
-                        기존 파우치들의 고질적인 불편함, 더 우아한 방법으로 해결할 수 있습니다.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="flex gap-6 bg-white border border-neutral-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:border-brand-lavender/25 transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-400">
-                            <i class="fa-solid fa-layer-group text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-2">파우치 안이 항상 엉망이다</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">정리정돈 없이 물건들이 한곳에 뒤섞여 매번 파우치를 다 쏟아부어야 하나요?</p>
+        <!-- Brand Story Intro Section -->
+        <section class="story-section" id="story">
+            <div class="decor-leaf leaf-left"><i class="fa-solid fa-leaf"></i></div>
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image-side reveal-on-scroll">
+                        <div class="story-img-card">
+                            <img src="images/브라운내부-2.jpg" alt="arlloy slimfit flat open" class="story-img">
                         </div>
                     </div>
-
-                    <div class="flex gap-6 bg-white border border-neutral-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:border-brand-lavender/25 transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-400">
-                            <i class="fa-solid fa-eye-slash text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-2">필요한 화장품을 찾기 어렵다</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">바쁜 여행지 아침, 립스틱 하나 찾느라 5분 이상 시간을 낭비하진 않으셨나요?</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-6 bg-white border border-neutral-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:border-brand-lavender/25 transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-400">
-                            <i class="fa-solid fa-heart-crack text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-2">브러쉬가 눌려 망가진다</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">다른 화장품 무게에 눌려 애지중지하던 비싼 메이크업 브러쉬가 망가진 적 있으시죠?</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-6 bg-white border border-neutral-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:border-brand-lavender/25 transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-400">
-                            <i class="fa-solid fa-suitcase text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-2">짐이 많아 가방이 복잡하다</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">뚱뚱하게 불어난 파우치가 캐리어와 가방의 넓은 공간을 낭비하고 무겁게 만듭니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 3. 솔루션 -->
-        <section id="solution" class="py-24 bg-brand-white border-b border-neutral-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                        THE SOLUTION
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-                        ARLLOY 파우치는 다릅니다.
-                    </h2>
-                    <p class="text-neutral-600 font-medium text-base md:text-lg mt-4">
-                        공간을 나누고 가치를 채우는 특허받은 3단 독립형 수납 설계를 확인해 보세요.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <!-- Left Side: Tabs -->
-                    <div class="lg:col-span-5 flex flex-col gap-4">
-                        <button onclick="switchTab(0)" id="tab-btn-0" class="tab-button w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-start gap-4 bg-brand-lavender/5 border-brand-lavender/30 shadow-sm">
-                            <div class="tab-icon-box w-10 h-10 rounded-full flex items-center justify-center bg-brand-lavender text-white">
-                                <i class="fa-solid fa-archive"></i>
-                            </div>
-                            <div>
-                                <h3 class="tab-title text-base md:text-lg font-heading font-bold text-brand-black">메인 수납공간</h3>
-                                <p class="text-xs md:text-sm text-neutral-500 font-medium mt-0.5">쿠션, 파운데이션, 스킨케어 전용</p>
-                            </div>
-                        </button>
-
-                        <button onclick="switchTab(1)" id="tab-btn-1" class="tab-button w-full text-left p-6 rounded-2xl border border-neutral-100 bg-white hover:border-neutral-200 transition-all duration-300 flex items-start gap-4">
-                            <div class="tab-icon-box w-10 h-10 rounded-full flex items-center justify-center bg-neutral-100 text-brand-gray">
-                                <i class="fa-solid fa-paintbrush"></i>
-                            </div>
-                            <div>
-                                <h3 class="tab-title text-base md:text-lg font-heading font-bold text-brand-gray">브러쉬 전용 공간</h3>
-                                <p class="text-xs md:text-sm text-neutral-500 font-medium mt-0.5">소중한 메이크업 브러쉬 보호</p>
-                            </div>
-                        </button>
-
-                        <button onclick="switchTab(2)" id="tab-btn-2" class="tab-button w-full text-left p-6 rounded-2xl border border-neutral-100 bg-white hover:border-neutral-200 transition-all duration-300 flex items-start gap-4">
-                            <div class="tab-icon-box w-10 h-10 rounded-full flex items-center justify-center bg-neutral-100 text-brand-gray">
-                                <i class="fa-solid fa-table-cells-large"></i>
-                            </div>
-                            <div>
-                                <h3 class="tab-title text-base md:text-lg font-heading font-bold text-brand-gray">메쉬 포켓 공간</h3>
-                                <p class="text-xs md:text-sm text-neutral-500 font-medium mt-0.5">작고 잃어버리기 쉬운 아이템</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <!-- Right Side: Tab Details -->
-                    <div class="lg:col-span-7">
-                        <div class="bg-brand-light-gray p-8 md:p-12 rounded-3xl border border-neutral-100 flex flex-col justify-between min-h-[380px]">
-                            <div>
-                                <span id="tab-detail-sub" class="text-xs md:text-sm font-bold text-brand-lavender tracking-wider uppercase block mb-4">
-                                    쿠션, 파운데이션, 스킨케어 전용
-                                </span>
-                                <h3 id="tab-detail-title" class="text-2xl md:text-3xl font-heading font-extrabold text-brand-black mb-6">
-                                    메인 수납공간
-                                </h3>
-                                <p id="tab-detail-desc" class="text-neutral-700 font-medium text-base md:text-lg leading-relaxed mb-8">
-                                    두껍고 부피가 큰 화장품을 세워서 안정적으로 고정하고 보관할 수 있습니다. 칸막이가 유연하게 움직여 선크림이나 기초 제품도 쏟아짐 없이 깔끔하게 자립 수납됩니다.
-                                </p>
-                            </div>
-
-                            <div class="bg-white border border-brand-lavender/10 px-6 py-4 rounded-xl flex items-center gap-3">
-                                <span class="w-2.5 h-2.5 rounded-full bg-brand-lavender animate-pulse flex-shrink-0"></span>
-                                <span id="tab-detail-highlight" class="text-xs md:text-sm font-semibold text-brand-lavender">
-                                    립스틱 홀더 4개 & 분리형 가벽 수납
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 4. 핵심 기능 -->
-        <section id="features" class="py-24 bg-brand-light-gray border-b border-neutral-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                        KEY FEATURES
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-                        우아함을 더하는 디테일 기능
-                    </h2>
-                    <p class="text-neutral-600 font-medium text-base md:text-lg mt-4">
-                        단순히 담는 파우치를 넘어, 완벽한 사용자 편의를 위해 디테일하게 설계된 ARLLOY의 가치를 확인해 보세요.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white border border-neutral-100 p-8 rounded-2xl transition-all duration-300 hover:shadow-md hover:border-brand-lavender/20 flex flex-col items-start">
-                        <div class="w-12 h-12 rounded-xl bg-brand-lavender/5 flex items-center justify-center mb-6 text-brand-lavender">
-                            <i class="fa-solid fa-expand text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-brand-black mb-3">180도 풀오픈</h3>
-                        <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">바닥 면까지 끝까지 열려 화장대를 펼친 것처럼 내부 수납물이 한눈에 보이고 정리하기 쉽습니다.</p>
-                    </div>
-
-                    <div class="bg-white border border-neutral-100 p-8 rounded-2xl transition-all duration-300 hover:shadow-md hover:border-brand-lavender/20 flex flex-col items-start">
-                        <div class="w-12 h-12 rounded-xl bg-brand-lavender/5 flex items-center justify-center mb-6 text-brand-lavender">
-                            <i class="fa-solid fa-eye text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-brand-black mb-3">넓은 입구</h3>
-                        <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">지퍼를 여는 순간 와이드 오프닝 구조로 부피가 큰 기초 제품이나 보조배터리도 걸림 없이 자유롭게 넣고 뺍니다.</p>
-                    </div>
-
-                    <div class="bg-white border border-neutral-100 p-8 rounded-2xl transition-all duration-300 hover:shadow-md hover:border-brand-lavender/20 flex flex-col items-start">
-                        <div class="w-12 h-12 rounded-xl bg-brand-lavender/5 flex items-center justify-center mb-6 text-brand-lavender">
-                            <i class="fa-solid fa-cubes text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-brand-black mb-3">대용량 수납</h3>
-                        <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">화장품부터 전자기기 충전기까지. 여유로운 폭과 늘어나는 주머니 구조로 공간 효율을 극한으로 끌어올렸습니다.</p>
-                    </div>
-
-                    <div class="bg-white border border-neutral-100 p-8 rounded-2xl transition-all duration-300 hover:shadow-md hover:border-brand-lavender/20 flex flex-col items-start">
-                        <div class="w-12 h-12 rounded-xl bg-brand-lavender/5 flex items-center justify-center mb-6 text-brand-lavender">
-                            <i class="fa-solid fa-faucet-drip text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-brand-black mb-3">생활방수</h3>
-                        <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">겉감과 안감에 고밀도 PVC 코팅 발수 가공을 거쳐 물방울이나 화장품 오염이 내부/외부로 스며들지 않습니다.</p>
-                    </div>
-
-                    <div class="bg-white border border-neutral-100 p-8 rounded-2xl transition-all duration-300 hover:shadow-md hover:border-brand-lavender/20 flex flex-col items-start">
-                        <div class="w-12 h-12 rounded-xl bg-brand-lavender/5 flex items-center justify-center mb-6 text-brand-lavender">
-                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-brand-black mb-3">손쉬운 세척</h3>
-                        <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">안감에 내화학성 방수 안감을 적용해 섀도우 가루나 파운데이션이 묻어도 물티슈 한 장으로 간편하게 닦아낼 수 있습니다.</p>
-                    </div>
-
-                    <div class="bg-white border border-neutral-100 p-8 rounded-2xl transition-all duration-300 hover:shadow-md hover:border-brand-lavender/20 flex flex-col items-start">
-                        <div class="w-12 h-12 rounded-xl bg-brand-lavender/5 flex items-center justify-center mb-6 text-brand-lavender">
-                            <i class="fa-solid fa-lock text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-heading font-bold text-brand-black mb-3">튼튼한 지퍼</h3>
-                        <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed">부드럽고 내구성이 우수한 프리미엄 더블 지퍼 라인을 적용해 많이 수납해도 지퍼가 씹히거나 고장 나지 않습니다.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 5. 실제 수납 테스트 -->
-        <section class="py-24 bg-white border-b border-neutral-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <!-- Left Column: Checklist -->
-                    <div class="lg:col-span-5 flex flex-col justify-center">
-                        <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                            STORAGE CAPACITY TEST
-                        </span>
-                        <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight mb-4">
-                            이 모든 것이 <br /> 들어갑니다.
-                        </h2>
-                        <p class="text-neutral-600 font-medium text-base md:text-lg mb-8 leading-relaxed">
-                            화장품뿐만 아니라 여행에 꼭 필요한 전자기기 충전 세트까지. 넉넉하고 안전하게 한곳에 수납해 가방 부피를 50% 줄여보세요.
+                    <div class="story-text-side reveal-on-scroll">
+                        <span class="section-subtitle">SLIM FIT</span>
+                        <h2 class="section-title">슬림핏 삼각 파우치는 다릅니다!</h2>
+                        <p class="story-para">
+                            사용하기 복잡하고 무거운 파우치는 그만, 얇고 가볍게 정리하는 슬림핏 삼각 파우치.
                         </p>
-
-                        <div class="flex flex-col gap-4">
-                            <div class="flex items-center justify-between bg-brand-light-gray px-5 py-4 rounded-xl border border-neutral-100/50">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                    <span class="font-heading font-bold text-brand-black text-base md:text-lg">리퀴드 파운데이션 & 쿠션</span>
-                                </div>
+                        <p class="story-para">
+                            한눈에 보이는 직관적인 수납과 가방 속에 쏙 들어가는 밀착 구조로, 일상의 공간 효율과 메이크업의 편리함을 모두 극대화합니다.
+                        </p>
+                        <div class="brand-stat-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">110g</span>
+                                <span class="stat-label">초경량 무게</span>
                             </div>
-                            <div class="flex items-center justify-between bg-brand-light-gray px-5 py-4 rounded-xl border border-neutral-100/50">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                    <span class="font-heading font-bold text-brand-black text-base md:text-lg">립스틱 & 립틴트 (4개)</span>
-                                </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">한눈에 들어오는 가시성</span>
                             </div>
-                            <div class="flex items-center justify-between bg-brand-light-gray px-5 py-4 rounded-xl border border-neutral-100/50">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                    <span class="font-heading font-bold text-brand-black text-base md:text-lg">메이크업 브러쉬 (5개)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between bg-brand-light-gray px-5 py-4 rounded-xl border border-neutral-100/50">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                    <span class="font-heading font-bold text-brand-black text-base md:text-lg">향수 보틀 (30ml)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between bg-brand-light-gray px-5 py-4 rounded-xl border border-neutral-100/50">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                    <span class="font-heading font-bold text-brand-black text-base md:text-lg">보조배터리 & 충전용 케이블</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Product Image -->
-                    <div class="lg:col-span-7 flex justify-center">
-                        <div class="relative w-full max-w-lg aspect-square bg-brand-light-gray rounded-[2.5rem] p-6 border border-neutral-100 shadow-md flex items-center justify-center overflow-hidden">
-                            <img src="images/pouch_black_open.png" alt="ARLLOY open black pouch packed test" class="w-full h-full object-contain rounded-2xl transition-transform duration-700 ease-out hover:scale-105">
-                            <div class="absolute bottom-6 right-6 bg-brand-black/85 backdrop-blur-sm border border-white/10 px-5 py-3 rounded-full text-white text-xs font-bold tracking-wider uppercase shadow-md">
-                                Verified Storage Capacity
+                            <div class="stat-item">
+                                <span class="stat-number">밀착</span>
+                                <span class="stat-label">가방 밀착 삼각 프레임</span>
                             </div>
                         </div>
                     </div>
@@ -452,696 +185,641 @@
             </div>
         </section>
 
-
-        <!-- SECTION 6. 경쟁사 비교 -->
-        <section class="py-24 bg-brand-light-gray border-b border-neutral-100">
-            <div class="max-w-5xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                        THE COMPARISON
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-                        압도적인 차이를 경험하세요
-                    </h2>
-                    <p class="text-neutral-600 font-medium text-base md:text-lg mt-4">
-                        비교할수록 확실해지는 ARLLOY만의 프리미엄 디테일과 편의성입니다.
-                    </p>
+        <!-- Interactive Folding Simulator Section -->
+        <section class="simulator-section" id="simulator">
+            <div class="decor-leaf leaf-right"><i class="fa-solid fa-leaf"></i></div>
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">FOLDING SYSTEM</span>
+                    <h2 class="section-title">가방 공간을 줄이는 납작 구조</h2>
+                    <p class="section-desc">부피는 납작하게 접히고 물건을 넣으면 늘어나는 입체 아코디언 구조를 확인해 보세요.</p>
                 </div>
 
-                <div class="overflow-x-auto">
-                    <table class="w-full border-collapse text-left min-w-[600px] bg-white rounded-3xl overflow-hidden shadow-sm border border-neutral-100">
-                        <thead>
-                            <tr class="border-b border-neutral-100 bg-neutral-50">
-                                <th class="p-6 md:p-8 font-heading font-bold text-brand-black text-sm md:text-base">비교 항목</th>
-                                <th class="p-6 md:p-8 font-heading font-extrabold text-brand-lavender text-sm md:text-base bg-brand-lavender/[0.03]">ARLLOY Pouch</th>
-                                <th class="p-6 md:p-8 font-heading font-bold text-brand-gray text-sm md:text-base">일반 파우치</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-neutral-100/70 hover:bg-neutral-50/50 transition-colors">
-                                <td class="p-6 md:p-8 font-heading font-bold text-brand-black text-xs md:text-sm">수납력</td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm bg-brand-lavender/[0.01]">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                        <span class="font-semibold text-brand-black">3단 분리 독립 대용량 (3L+)</span>
-                                    </div>
-                                </td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm text-brand-gray">
-                                    <div class="flex items-center gap-3">
-                                        <i class="fa-solid fa-xmark text-red-400 flex-shrink-0"></i>
-                                        <span>구분 없는 단순 단일 포켓 (1L)</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-neutral-100/70 hover:bg-neutral-50/50 transition-colors">
-                                <td class="p-6 md:p-8 font-heading font-bold text-brand-black text-xs md:text-sm">브러쉬 보관</td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm bg-brand-lavender/[0.01]">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                        <span class="font-semibold text-brand-black">전용 밴드 & 투명 위생 PVC 커버</span>
-                                    </div>
-                                </td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm text-brand-gray">
-                                    <div class="flex items-center gap-3">
-                                        <i class="fa-solid fa-xmark text-red-400 flex-shrink-0"></i>
-                                        <span>기타 화장품과 섞여 브러쉬 모 훼손</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-neutral-100/70 hover:bg-neutral-50/50 transition-colors">
-                                <td class="p-6 md:p-8 font-heading font-bold text-brand-black text-xs md:text-sm">생활방수</td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm bg-brand-lavender/[0.01]">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                        <span class="font-semibold text-brand-black">겉감/안감 이중 방수 코팅 원단</span>
-                                    </div>
-                                </td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm text-brand-gray">
-                                    <div class="flex items-center gap-3">
-                                        <i class="fa-solid fa-xmark text-red-400 flex-shrink-0"></i>
-                                        <span>방수 미지원, 화장품 오염 시 세척 불가</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-neutral-100/70 hover:bg-neutral-50/50 transition-colors">
-                                <td class="p-6 md:p-8 font-heading font-bold text-brand-black text-xs md:text-sm">개방성</td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm bg-brand-lavender/[0.01]">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                        <span class="font-semibold text-brand-black">180도 풀오픈 바닥 자립형 구조</span>
-                                    </div>
-                                </td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm text-brand-gray">
-                                    <div class="flex items-center gap-3">
-                                        <i class="fa-solid fa-xmark text-red-400 flex-shrink-0"></i>
-                                        <span>입구가 좁아 뒤집어서 내용물 추출</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-neutral-100/70 hover:bg-neutral-50/50 transition-colors">
-                                <td class="p-6 md:p-8 font-heading font-bold text-brand-black text-xs md:text-sm">휴대성</td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm bg-brand-lavender/[0.01]">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-5 h-5 rounded-full bg-brand-lavender/10 text-brand-lavender flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                                        <span class="font-semibold text-brand-black">지퍼를 닫으면 납작하게 슬림 밀착</span>
-                                    </div>
-                                </td>
-                                <td class="p-6 md:p-8 text-xs md:text-sm text-brand-gray">
-                                    <div class="flex items-center gap-3">
-                                        <i class="fa-solid fa-xmark text-red-400 flex-shrink-0"></i>
-                                        <span>조금만 담아도 뚱뚱해져 캐리어 공간 차지</span>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 7. 고객 후기 -->
-        <section id="reviews" class="py-24 bg-white border-b border-neutral-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                        CUSTOMER REVIEWS
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-                        ARLLOY 고객들의 리얼 후기
-                    </h2>
-                    <p class="text-neutral-600 font-medium text-base md:text-lg mt-4">
-                        직접 수납의 편리함을 경험한 실사용자분들의 검증된 후기입니다.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-brand-light-gray p-8 rounded-3xl border border-neutral-100 flex flex-col justify-between hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div>
-                            <div class="flex items-center gap-1 mb-6 text-brand-lavender">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                <div class="simulator-layout">
+                    <div class="simulator-visual-container reveal-on-scroll">
+                        <!-- Fold Visualizer Mockup -->
+                        <div class="pouch-visualizer" id="folding-pouch">
+                            <!-- Closed Pouch State (Pleated Panels) -->
+                            <div class="pouch-exterior-view active" id="pouch-closed-view">
+                                <img src="images/pouch_pink_new.jpg" alt="arlloy closed pleated pouch" class="pouch-state-img">
                             </div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-4">“화장품 찾는 시간이 줄었어요”</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed mb-6">립스틱 하나 찾느라 파우치 다 엎어놓던 날들은 이제 끝났어요. 지퍼만 열면 책 꽂아두듯 세워서 바로 찾으니까 메이크업 준비 시간이 대폭 줄어들었습니다.</p>
-                        </div>
-                        <div class="flex items-center justify-between border-t border-neutral-200/50 pt-5">
-                            <div>
-                                <span class="text-sm font-bold text-brand-black block">김*희 님</span>
-                                <span class="text-xs text-neutral-400 font-medium">32세 여행 크리에이터</span>
-                            </div>
-                            <span class="text-xs font-bold text-brand-lavender bg-brand-lavender/10 px-2.5 py-1 rounded-full uppercase tracking-wider">대용량 수납 만족</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-brand-light-gray p-8 rounded-3xl border border-neutral-100 flex flex-col justify-between hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div>
-                            <div class="flex items-center gap-1 mb-6 text-brand-lavender">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-4">“여행갈 때 필수품이 됐어요”</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed mb-6">비행기 기내 반입 시 스킨케어와 메이크업 화장품들을 이중 안감 덕분에 누수 걱정 없이 깔끔하게 보관할 수 있어 출장이나 해외여행 갈 때 무조건 챙기는 필수템입니다.</p>
-                        </div>
-                        <div class="flex items-center justify-between border-t border-neutral-200/50 pt-5">
-                            <div>
-                                <span class="text-sm font-bold text-brand-black block">이*진 님</span>
-                                <span class="text-xs text-neutral-400 font-medium">45세 전문직</span>
-                            </div>
-                            <span class="text-xs font-bold text-brand-lavender bg-brand-lavender/10 px-2.5 py-1 rounded-full uppercase tracking-wider">생활방수 우수</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-brand-light-gray p-8 rounded-3xl border border-neutral-100 flex flex-col justify-between hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
-                        <div>
-                            <div class="flex items-center gap-1 mb-6 text-brand-lavender">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h3 class="text-xl font-heading font-bold text-brand-black mb-4">“생각보다 정말 많이 들어갑니다”</h3>
-                            <p class="text-neutral-600 font-medium text-sm md:text-base leading-relaxed mb-6">파운데이션 보틀에 보조배터리 세트까지 다 들어가는데 닫으면 콤팩트하고 납작해져요. 캐리어 패킹할 때 데드 스페이스를 싹 없애줍니다. 수납력이 진짜 사기 수준이에요.</p>
-                        </div>
-                        <div class="flex items-center justify-between border-t border-neutral-200/50 pt-5">
-                            <div>
-                                <span class="text-sm font-bold text-brand-black block">박*연 님</span>
-                                <span class="text-xs text-neutral-400 font-medium">38세 프리랜서</span>
-                            </div>
-                            <span class="text-xs font-bold text-brand-lavender bg-brand-lavender/10 px-2.5 py-1 rounded-full uppercase tracking-wider">콤팩트 패킹</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 8. 브랜드 철학 -->
-        <section class="py-28 bg-brand-black text-white relative overflow-hidden">
-            <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[350px] h-[350px] bg-brand-lavender/10 rounded-full filter blur-[100px] pointer-events-none"></div>
-
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-                    <!-- Left Column -->
-                    <div class="lg:col-span-6 flex flex-col justify-center">
-                        <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-6">
-                            BRAND PHILOSOPHY
-                        </span>
-                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-extrabold text-white leading-tight tracking-tight mb-8">
-                            &ldquo;정리는 공간을 <br class="hidden md:block" /> 만드는 것이 아니라, <br />
-                            여행의 <span class="text-brand-lavender">여유</span>를 만드는 것입니다.&rdquo;
-                        </h2>
-                        <div class="w-16 h-1 bg-brand-lavender rounded-full"></div>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="lg:col-span-6 flex flex-col justify-center">
-                        <h3 class="text-2xl font-heading font-bold text-neutral-200 mb-6 uppercase tracking-wider">
-                            ARLLOY Brand Story
-                        </h3>
-                        <div class="space-y-6 text-neutral-300 font-medium text-base md:text-lg leading-relaxed">
-                          <p>우리는 여행지의 낯선 설렘보다, 캐리어 가방을 싸고 정리하는 순간의 불편함에 주목했습니다. 번거로운 짐 싸기가 귀찮은 숙제가 아닌, 여행의 시작을 준비하는 가장 우아한 과정이 될 수 있도록 ARLLOY가 탄생했습니다.</p>
-                          <p>ARLLOY의 모든 구조는 화장대나 책상 서랍을 그대로 옮겨놓은 듯한 직관적이고 규칙적인 세로 수납을 목표로 설계되었습니다. 필요한 물건을 단 1초 만에 찾을 수 있는 정리 정돈의 여유, 그것이 우리가 전하고자 하는 프리미엄 라이프스타일 가치입니다.</p>
-                          <p class="text-brand-lavender font-semibold text-lg md:text-xl">&ldquo;여행의 준비를 더 우아하게, ARLLOY&rdquo;</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 9. FAQ -->
-        <section id="faq" class="py-24 bg-brand-light-gray">
-            <div class="max-w-4xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                        FREQUENTLY ASKED QUESTIONS
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-brand-black tracking-tight leading-tight">
-                        자주 묻는 질문
-                    </h2>
-                    <p class="text-neutral-600 font-medium text-base md:text-lg mt-4">
-                        ARLLOY에 대해 궁금한 점을 직관적으로 확인하세요.
-                    </p>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- FAQ 1 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(0)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">세탁이 가능한가요?</span>
-                            <i id="faq-chevron-0" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-0" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                겉감과 안감 모두 특수 코팅이 되어 있어 세탁기 사용은 권장하지 않습니다. 가벼운 오염은 물티슈나 젖은 수건으로 닦아주시고, 전체 세척이 필요한 경우 미지근한 물에 중성세제를 풀어 가볍게 손세탁 후 그늘에서 건조해 주세요.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 2 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(1)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">브러쉬는 몇 개까지 들어가나요?</span>
-                            <i id="faq-chevron-1" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                브러쉬 전용 포켓 공간의 탄력 고무 밴드 홀더는 얇은 아이브로우부터 볼드한 파우더 브러쉬까지 총 5~8개까지 섞이지 않고 안전하게 분리 고정 및 수납이 가능합니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 3 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(2)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">비행기 기내용으로 휴대가 가능한가요?</span>
-                            <i id="faq-chevron-2" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                네, 휴대하기 이상적인 콤팩트 규격으로 기내 반입 휴대 수하물 백팩이나 캐리어에 쏙 들어갑니다. 단, 100ml 초과 액체 화장품을 담아 기내 탑재하실 경우 국제선 액체류 반입 규정에 맞추어 지퍼백에 별도 분리해야 할 수 있습니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 4 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(3)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">생활방수는 어느 정도인가요?</span>
-                            <i id="faq-chevron-3" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                고밀도 옥스포드 나일론 원단 겉면 발수 코팅과 안쪽 PVC 방수 안감 2중 가공으로, 일상적인 세면대 물방울, 가벼운 비, 화장품 오염 등을 완벽하게 튕겨내며 내용물을 뽀송하게 보호합니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 5 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(4)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">화장품 외에 전자기기 수납도 가능한가요?</span>
-                            <i id="faq-chevron-4" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                네, 다용도 스마트 오거나이저 구조로 설계되어 여행용 보조배터리, 220V 플러그 어댑터, 외장 하드, 마우스, 각종 충전용 케이블 타이 등을 깔끔하게 수납하는 IT 파우치로도 인기가 매우 높습니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 6 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(5)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">180도로 활짝 열리면 안의 소품들이 쏟아지지 않나요?</span>
-                            <i id="faq-chevron-5" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                포켓 내부가 각 영역별로 고무 마감 밴딩 처리와 분리 수납 격벽 구조로 이루어져 있어, 180도 완전히 개방하여 흔들어도 수납해 놓은 화장품들이 이탈하거나 뒤섞여 쏟아지지 않습니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 7 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(6)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">제품 크기와 무게가 어떻게 되나요?</span>
-                            <i id="faq-chevron-6" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                가로 22cm x 세로 16cm x 폭 7cm 사이즈입니다. 내구성을 위한 3D 완충 보강재가 들어갔음에도 빈 파우치 기준 약 120g의 초경량 무게로 제작되어 장시간 여행길에도 무리가 없습니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 8 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(7)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">보조배터리도 함께 보관해도 안전한가요?</span>
-                            <i id="faq-chevron-7" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-7" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                파우치 내부와 외부 벽면에 도톰한 고밀도 완충재 패딩이 내장되어 있어 가벼운 외부 충격과 눌림을 차단합니다. 따라서 화장품 컴팩트 섀도우 깨짐 방지는 물론 전자기기도 안전하게 보관할 수 있습니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 9 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(8)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">지퍼가 쉽게 고장 나거나 씹히지 않나요?</span>
-                            <i id="faq-chevron-8" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-8" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                고가의 아웃도어 기어에 들어가는 대형 라운드 더블 지퍼 슬라이더 공정을 거쳤습니다. 파우치를 풀 수납한 상태에서도 걸림 없이 양방향에서 부드럽게 개폐됩니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 10 -->
-                    <div class="bg-white border border-neutral-100/70 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
-                        <button onclick="toggleFAQ(9)" class="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none">
-                            <span class="font-heading font-bold text-brand-black text-base md:text-lg">구매 후 반품이나 교환이 가능한가요?</span>
-                            <i id="faq-chevron-9" class="fa-solid fa-chevron-down text-brand-gray transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-ans-9" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <p class="p-6 md:p-8 text-neutral-600 font-medium text-sm md:text-base leading-relaxed bg-neutral-50/30">
-                                네, 제품 수령 후 사용하지 않으신 상태(포장 제거 전)라면 7일 이내에 단순 변심이라도 100% 무료 반품 및 교환 서비스를 신청하실 수 있습니다. 고객님의 만족을 최우선으로 합니다.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION 10. 구매 CTA -->
-        <section id="checkout" class="py-24 bg-white">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="bg-brand-light-gray rounded-[2.5rem] border border-neutral-100 p-8 md:p-16 shadow-sm">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <!-- Left: Image Preview -->
-                        <div class="lg:col-span-6 flex flex-col items-center">
-                            <div class="w-full max-w-sm aspect-square bg-white rounded-3xl p-6 border border-neutral-100 shadow-sm flex items-center justify-center overflow-hidden">
-                                <img id="checkout-preview-img" src="images/pouch_black_open.png" alt="ARLLOY Pouch Preview" class="w-full h-full object-contain transition-transform duration-500 hover:scale-105">
-                            </div>
-                        </div>
-
-                        <!-- Right: Pricing & Color Selection -->
-                        <div class="lg:col-span-6">
-                            <span class="text-xs md:text-sm font-heading font-extrabold tracking-widest text-brand-lavender uppercase block mb-3">
-                                LIMITED OFFER
-                            </span>
-                            <h2 class="text-3xl md:text-4xl font-heading font-extrabold text-brand-black tracking-tight leading-tight mb-4">
-                                다음 여행 전, <br /> 정리의 차이를 경험해보세요.
-                            </h2>
-                            <p class="text-neutral-600 font-medium text-xs md:text-sm mb-8 leading-relaxed">
-                                정리에 투자하는 작은 차이가 여행 전체의 품격을 결정합니다. 15% 얼리버드 특별 할인 기간에 만나보세요.
-                            </p>
-
-                            <!-- Pricing -->
-                            <div class="bg-white border border-neutral-100 p-6 rounded-2xl mb-8 flex items-center justify-between">
-                                <div>
-                                    <span class="text-xs text-neutral-400 font-bold block mb-1">정상가 ₩45,000</span>
-                                    <div class="flex items-baseline gap-2">
-                                        <span class="text-3xl font-heading font-extrabold text-brand-black">₩38,250</span>
-                                        <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded">15% OFF</span>
+                            
+                            <!-- Open Pouch State (Internal Compartments) -->
+                            <div class="pouch-interior-view" id="pouch-opened-view">
+                                <div class="interior-grid">
+                                    <div class="pocket-row">
+                                        <div class="pocket-compartment"><div class="item-mock lipstick"></div></div>
+                                        <div class="pocket-compartment"><div class="item-mock foundation"></div></div>
+                                        <div class="pocket-compartment"><div class="item-mock brush"></div></div>
+                                    </div>
+                                    <div class="pocket-row center-row">
+                                        <div class="pocket-compartment large-pocket"><div class="item-mock cream"></div></div>
+                                        <div class="pocket-compartment large-pocket"><div class="item-mock perfume"></div></div>
+                                    </div>
+                                    <div class="pocket-row">
+                                        <div class="pocket-compartment"><div class="item-mock eyeliner"></div></div>
+                                        <div class="pocket-compartment"><div class="item-mock shadow"></div></div>
+                                        <div class="pocket-compartment"><div class="item-mock sunscreen"></div></div>
                                     </div>
                                 </div>
-                                <div class="text-right">
-                                    <span class="text-xs text-brand-lavender bg-brand-lavender/10 px-3 py-1 rounded-full font-bold">
-                                        서울/경기 무료 배송
-                                    </span>
-                                </div>
+                                <img src="images/pouch_black_open.png" alt="arlloy open pouch interior view" class="pouch-state-img interior-overlay">
                             </div>
 
-                            <!-- Color Options -->
-                            <div class="mb-8">
-                                <span class="text-xs font-bold text-brand-black uppercase tracking-wider block mb-3">
-                                    색상 선택: <span id="checkout-color-label" class="text-brand-lavender font-extrabold">차콜 블랙</span>
-                                </span>
-                                <div class="flex gap-4">
-                                    <button onclick="selectCheckoutColor('ivory')" id="color-dot-ivory" class="w-10 h-10 rounded-full border-2 border-transparent transition-all duration-300 transform hover:scale-110 flex items-center justify-center bg-[#F7F4EF]" aria-label="Select Warm Ivory"></button>
-                                    <button onclick="selectCheckoutColor('black')" id="color-dot-black" class="w-10 h-10 rounded-full border-2 border-brand-lavender ring-2 ring-brand-lavender/25 transition-all duration-300 transform hover:scale-110 flex items-center justify-center bg-[#1E1D1A]" aria-label="Select Charcoal Black">
-                                        <span class="w-2.5 h-2.5 rounded-full bg-white shadow-sm mix-blend-difference"></span>
-                                    </button>
-                                    <button onclick="selectCheckoutColor('brown')" id="color-dot-brown" class="w-10 h-10 rounded-full border-2 border-transparent transition-all duration-300 transform hover:scale-110 flex items-center justify-center bg-[#6E473B]" aria-label="Select Classic Brown"></button>
-                                </div>
+
+                        </div>
+                    </div>
+
+                    <div class="simulator-controls reveal-on-scroll">
+                        <div class="control-card">
+                            <h3>폴딩 컨트롤러</h3>
+                            <p>슬라이더를 밀어 파우치를 열고 닫을 수 있습니다.</p>
+                            
+                            <div class="status-labels">
+                                <span id="status-left" class="active">콤팩트 접힘 (0%)</span>
+                                <span id="status-right">와이드 펼침 (100%)</span>
                             </div>
 
-                            <!-- Purchase Action -->
-                            <button onclick="purchaseProduct()" class="w-full bg-brand-black text-white hover:bg-brand-lavender hover:shadow-lg hover:shadow-brand-lavender/10 text-base md:text-lg font-bold py-5 rounded-full shadow-md transition-all duration-300 mb-8">
-                                지금 구매하기
+                            <div class="range-slider-wrapper">
+                                <input type="range" min="0" max="100" value="0" class="slider" id="folding-slider" aria-label="Folding Range Slider">
+                                <div class="slider-fill" id="slider-fill-track"></div>
+                            </div>
+
+                            <div class="quick-buttons">
+                                <button class="btn btn-sm btn-outline-dark" id="btn-fold-close">지퍼 닫기 (접기)</button>
+                                <button class="btn btn-sm btn-outline-dark" id="btn-fold-open">지퍼 열기 (펼치기)</button>
+                            </div>
+
+                            <div class="feature-bullets">
+                                <div class="bullet-item" id="bullet-1">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>접힌 상태:</strong> 얇고 납작하게 접혀 가방 안의 부피를 차지하지 않습니다.</span>
+                                </div>
+                                <div class="bullet-item" id="bullet-2">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span><strong>펼쳐진 상태:</strong> 지퍼가 끝까지 열리며 박스 형태로 꼿꼿하게 자립합니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Structure Gallery Section -->
+        <section class="gallery-section" id="structure-gallery">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">DETAILED STRUCTURE</span>
+                    <h2 class="section-title">열면 바로 찾는 와이드 오픈 & 분리형 수납</h2>
+                    <p class="section-desc">바닥까지 펼쳐지는 180도 오픈 구조와 실물 브러쉬 밴드, 메쉬 포켓의 완벽한 디테일을 확인해 보세요.</p>
+                </div>
+
+                <div class="gallery-layout reveal-on-scroll">
+                    <!-- Tab Buttons for Color -->
+                    <div class="gallery-color-tabs">
+                        <button class="gallery-tab-btn active" data-gallery-color="brown">
+                            <span class="color-indicator brown"></span> Classic Brown
+                        </button>
+                        <button class="gallery-tab-btn" data-gallery-color="ivory">
+                            <span class="color-indicator ivory"></span> Warm Ivory
+                        </button>
+                        <button class="gallery-tab-btn" data-gallery-color="black">
+                            <span class="color-indicator black"></span> Charcoal Black
+                        </button>
+                    </div>
+
+                    <div class="gallery-main-card">
+                        <!-- Left side: Image and View Selectors -->
+                        <div class="gallery-visual-side">
+                            <!-- Brown Gallery Views -->
+                            <div class="gallery-view-container active" data-gallery-color="brown">
+                                <img src="images/브라운내부-1.jpg" alt="Classic Brown Empty Pouch" class="gallery-img active" data-view="empty-top">
+                                <img src="images/브라운브랜드.png" alt="Classic Brown Packed Pouch" class="gallery-img" data-view="packed-top">
+                                <img src="images/브라운내부-2.jpg" alt="Classic Brown Packed Pouch Side View" class="gallery-img" data-view="packed-side">
+                            </div>
+
+                            <!-- Ivory Gallery Views -->
+                            <div class="gallery-view-container" data-gallery-color="ivory">
+                                <img src="images/아이보리내부.jpg" alt="Warm Ivory Empty Pouch" class="gallery-img active" data-view="empty-top">
+                                <img src="images/아이보리브랜드.png" alt="Warm Ivory Packed Pouch" class="gallery-img" data-view="packed-top">
+                                <img src="images/아이보리내부-2.jpg" alt="Warm Ivory Packed Pouch Details" class="gallery-img" data-view="packed-side">
+                            </div>
+
+                            <!-- Black Gallery Views -->
+                            <div class="gallery-view-container" data-gallery-color="black">
+                                <img src="images/파우치내부-4.jpg" alt="Charcoal Black Empty Pouch (Labeled)" class="gallery-img active" data-view="empty-top">
+                                <img src="images/파우치내부사진.jpg" alt="Charcoal Black Packed Pouch" class="gallery-img" data-view="packed-top">
+                                <img src="images/일본파우치.jpg" alt="Charcoal Black Pouch Line-up" class="gallery-img" data-view="packed-side">
+                            </div>
+
+                            <!-- Toggle Selectors -->
+                            <div class="gallery-view-selectors">
+                                <button class="view-select-btn active" data-view-target="empty-top">
+                                    <i class="fa-solid fa-box-open"></i> 비어있는 상태
+                                </button>
+                                <button class="view-select-btn" data-view-target="packed-top">
+                                    <i class="fa-solid fa-box"></i> 화장품 수납 (상면)
+                                </button>
+                                <button class="view-select-btn" data-view-target="packed-side">
+                                    <i class="fa-solid fa-grip-vertical"></i> 세로 수납 (측면)
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right side: Explanation and features -->
+                        <div class="gallery-info-side">
+                            <div class="gallery-info-content active" data-gallery-color="brown">
+                                <span class="info-badge">Classic Brown</span>
+                                <h3>열면 바로 찾는 180도 와이드 오픈</h3>
+                                <p class="info-text">
+                                    바닥까지 활짝 열리는 180도 오픈 구조로 필요한 화장품을 즉시 확인하고 꺼낼 수 있습니다. 파우치 깊숙이 손을 집어넣어 헤맬 필요 없이, 한눈에 모든 메이크업 도구를 확인할 수 있어 메이크업 시간이 대폭 단축됩니다.
+                                </p>
+                                <ul class="info-features">
+                                    <li><i class="fa-solid fa-check"></i> 바닥까지 시원하게 열리는 180도 와이드 구조</li>
+                                    <li><i class="fa-solid fa-check"></i> 도구가 흔들리지 않게 세워서 밀착하는 세로 수납</li>
+                                    <li><i class="fa-solid fa-check"></i> 견고하게 각을 잡아주며 부드럽게 닫히는 지퍼 라인</li>
+                                </ul>
+                            </div>
+                            <div class="gallery-info-content" data-gallery-color="ivory">
+                                <span class="info-badge">Warm Ivory</span>
+                                <h3>정리가 쉬워지는 입체 분리형 수납</h3>
+                                <p class="info-text">
+                                    양옆에 브러쉬 고정용 밴드와 분리형 메쉬 포켓이 내장되어 있습니다. 긴 브러쉬나 뷰러는 물론, 섀도우나 퍼프 같이 섞이기 쉬운 작은 소품들까지 깔끔하게 파티션 분리하여 흔들림 없고 청결하게 수납합니다.
+                                </p>
+                                <ul class="info-features">
+                                    <li><i class="fa-solid fa-check"></i> 브러쉬와 아이브로우를 깔끔하게 세워두는 전용 브러쉬 밴드</li>
+                                    <li><i class="fa-solid fa-check"></i> 퍼프와 섀도우를 깔끔하게 분류하는 분리형 메쉬 포켓</li>
+                                    <li><i class="fa-solid fa-check"></i> 쉽게 오염되지 않고 복원력이 뛰어난 프리미엄 가공 나일론 원단</li>
+                                </ul>
+                            </div>
+                            <div class="gallery-info-content" data-gallery-color="black">
+                                <span class="info-badge">Charcoal Black</span>
+                                <h3>인체공학적 수납 직관 레이아웃</h3>
+                                <p class="info-text">
+                                    차콜 블랙의 레이아웃은 화장품 종류별 전용 영역(립스틱, 브러쉬, 스킨케어 등)이 분리된 스마트 오거나이저 시스템을 적용했습니다. 분리형 격벽(Removable baffle)이 탑재되어 부피가 큰 소품도 유연하게 수납할 수 있습니다.
+                                </p>
+                                <ul class="info-features">
+                                    <li><i class="fa-solid fa-check"></i> 화장품 종류별로 완벽히 분리된 전용 수납 영역 설계</li>
+                                    <li><i class="fa-solid fa-check"></i> 필요에 따라 떼고 붙일 수 있는 탈부착식 격벽 장착</li>
+                                    <li><i class="fa-solid fa-check"></i> 유행을 타지 않는 모던하고 고급스러운 무광 블랙 피니시</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Color Showcase Section -->
+        <section class="colors-section" id="colors">
+            <div class="ambient-glow bg-dynamic" id="dynamic-bg-glow"></div>
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">COLOR VARIANTS</span>
+                    <h2 class="section-title">당신의 결을 채워줄 세 가지 시그니처</h2>
+                    <p class="section-desc">일상의 감성에 어우러지는 감각적인 세련된 컬러 라인업을 소개합니다.</p>
+                </div>
+
+                <div class="colors-layout">
+                    <!-- Left: Large Product Preview -->
+                    <div class="color-preview-side reveal-on-scroll">
+                        <div class="color-gallery-wrapper">
+                            <div class="color-slide active" data-color="ivory">
+                                <img src="images/아이보리브랜드.png" alt="Warm Ivory Pouch" class="product-gallery-img">
+                            </div>
+                            <div class="color-slide" data-color="black">
+                                <img src="images/pouch_black_open.png" alt="Charcoal Black Pouch" class="product-gallery-img">
+                            </div>
+                            <div class="color-slide" data-color="brown">
+                                <img src="images/브라운브랜드.png" alt="Classic Brown Pouch" class="product-gallery-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Color Details & Selector -->
+                    <div class="color-info-side reveal-on-scroll">
+                        <div class="color-selector-card">
+                            <div class="color-badge-current" id="color-name-display">Warm Ivory</div>
+                            <h3 class="color-title-h3" id="color-title-display">웜 아이보리</h3>
+                            <p class="color-desc-text" id="color-desc-display">
+                                깨끗하고 부드러운 일상의 순수함을 닮은 웜 아이보리. 어떤 소품이나 가방과도 완벽하게 조화를 이루며 세련된 감성 라이프를 완성합니다.
+                            </p>
+
+                            <!-- Color Selector Buttons -->
+                            <div class="color-dots-wrapper">
+                                <button class="color-dot active" data-color="ivory" style="background-color: #F7F4EF; border: 1px solid #dcdcdc;" aria-label="Select Warm Ivory"></button>
+                                <button class="color-dot" data-color="black" style="background-color: #1E1D1A;" aria-label="Select Charcoal Black"></button>
+                                <button class="color-dot" data-color="brown" style="background-color: #6E473B;" aria-label="Select Classic Brown"></button>
+                            </div>
+
+                            <div class="pricing-card">
+                                <div class="price-row">
+                                    <span class="original-price">₩45,000</span>
+                                    <span class="discount-rate">15% OFF</span>
+                                </div>
+                                <div class="sale-price">₩38,250</div>
+                            </div>
+
+                            <div class="action-buttons-group">
+                                <button class="btn btn-primary btn-large btn-add-cart">장바구니 담기</button>
+                                <button class="btn btn-outline btn-large">바로 구매하기</button>
+                            </div>
+
+                            <div class="shipping-info">
+                                <span><i class="fa-solid fa-truck-fast"></i> 서울/경기 무료 배송 (오후 2시 이전 주문 시 당일 발송)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packing Game Interactive Section -->
+        <section class="packing-game-section" id="pack-game">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">INTERACTIVE PACKING</span>
+                    <h2 class="section-title">arlloy에 직접 소품들을 채워보세요</h2>
+                    <p class="section-desc">소품을 클릭하여 파우치 안의 세로 슬롯에 깔끔하게 수납하는 정돈감을 시뮬레이션해 보세요.</p>
+                </div>
+
+                <div class="game-layout">
+                    <!-- Left: Cosmetic Items Drawer -->
+                    <div class="items-drawer-card reveal-on-scroll">
+                        <h3>화장대 소품 리스트</h3>
+                        <p>파우치에 담을 물건을 선택하세요.</p>
+                        
+                        <div class="cosmetic-items-grid">
+                            <button class="cosmetic-item-btn" data-item="lipstick" data-name="립스틱">
+                                <span class="item-icon"><i class="fa-solid fa-signature"></i></span>
+                                <span class="item-label">벨벳 립스틱</span>
                             </button>
+                            <button class="cosmetic-item-btn" data-item="perfume" data-name="향수">
+                                <span class="item-icon"><i class="fa-solid fa-bottle-droplet"></i></span>
+                                <span class="item-label">오 드 퍼퓸</span>
+                            </button>
+                            <button class="cosmetic-item-btn" data-item="foundation" data-name="파운데이션">
+                                <span class="item-icon"><i class="fa-solid fa-spray-can"></i></span>
+                                <span class="item-label">리퀴드 파데</span>
+                            </button>
+                            <button class="cosmetic-item-btn" data-item="brush" data-name="브러쉬">
+                                <span class="item-icon"><i class="fa-solid fa-paint-brush"></i></span>
+                                <span class="item-label">메이크업 브러쉬</span>
+                            </button>
+                            <button class="cosmetic-item-btn" data-item="cream" data-name="수분크림">
+                                <span class="item-icon"><i class="fa-solid fa-jar"></i></span>
+                                <span class="item-label">수분 에센스 크림</span>
+                            </button>
+                            <button class="cosmetic-item-btn" data-item="sunscreen" data-name="선크림">
+                                <span class="item-icon"><i class="fa-solid fa-soap"></i></span>
+                                <span class="item-label">선블록 크림</span>
+                            </button>
+                        </div>
 
-                            <!-- Trust Badges -->
-                            <div class="grid grid-cols-3 gap-4 border-t border-neutral-200/60 pt-6">
-                                <div class="flex flex-col items-center text-center">
-                                    <div class="text-brand-lavender text-lg mb-2"><i class="fa-solid fa-truck"></i></div>
-                                    <span class="text-[10px] font-bold text-brand-black">무료 당일 배송</span>
-                                    <span class="text-[8px] text-neutral-400 mt-0.5">오후 2시 이전 주문 시</span>
+                        <button class="btn btn-sm btn-outline-dark btn-reset-game" id="btn-reset-packing">화장대 정리 초기화</button>
+                    </div>
+
+                    <!-- Right: Pouch Slots Structure -->
+                    <div class="pouch-slots-card reveal-on-scroll">
+                        <div class="pouch-slots-header">
+                            <h3>arlloy 내부 세로 슬롯</h3>
+                            <div class="capacity-indicator">
+                                수납 완료: <span id="packed-count">0</span> / 6
+                            </div>
+                        </div>
+
+                        <div class="pouch-schematic">
+                            <div class="schematic-zipper-line">
+                                <span class="zipper-handle"><i class="fa-solid fa-folder-open"></i></span>
+                            </div>
+
+                            <div class="schematic-compartments">
+                                <!-- Compartment Slots -->
+                                <div class="schematic-slot" data-slot="lipstick">
+                                    <span class="slot-placeholder">립스틱 슬롯</span>
+                                    <div class="packed-item-visual">
+                                        <i class="fa-solid fa-signature"></i>
+                                        <span>벨벳 립스틱</span>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col items-center text-center">
-                                    <div class="text-brand-lavender text-lg mb-2"><i class="fa-solid fa-arrow-rotate-left"></i></div>
-                                    <span class="text-[10px] font-bold text-brand-black">7일 안심 보장</span>
-                                    <span class="text-[8px] text-neutral-400 mt-0.5">100% 무료 반품 및 교환</span>
+                                <div class="schematic-slot" data-slot="perfume">
+                                    <span class="slot-placeholder">향수 슬롯</span>
+                                    <div class="packed-item-visual">
+                                        <i class="fa-solid fa-bottle-droplet"></i>
+                                        <span>오 드 퍼퓸</span>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col items-center text-center">
-                                    <div class="text-brand-lavender text-lg mb-2"><i class="fa-solid fa-shield-halved"></i></div>
-                                    <span class="text-[10px] font-bold text-brand-black">보안 결제 지원</span>
-                                    <span class="text-[8px] text-neutral-400 mt-0.5">안전 거래 승인 보장</span>
+                                <div class="schematic-slot" data-slot="foundation">
+                                    <span class="slot-placeholder">파운데이션 슬롯</span>
+                                    <div class="packed-item-visual">
+                                        <i class="fa-solid fa-spray-can"></i>
+                                        <span>리퀴드 파데</span>
+                                    </div>
+                                </div>
+                                <div class="schematic-slot" data-slot="brush">
+                                    <span class="slot-placeholder">브러쉬 슬롯</span>
+                                    <div class="packed-item-visual">
+                                        <i class="fa-solid fa-paint-brush"></i>
+                                        <span>메이크업 브러쉬</span>
+                                    </div>
+                                </div>
+                                <div class="schematic-slot" data-slot="cream">
+                                    <span class="slot-placeholder">크림 슬롯</span>
+                                    <div class="packed-item-visual">
+                                        <i class="fa-solid fa-jar"></i>
+                                        <span>수분 크림</span>
+                                    </div>
+                                </div>
+                                <div class="schematic-slot" data-slot="sunscreen">
+                                    <span class="slot-placeholder">선크림 슬롯</span>
+                                    <div class="packed-item-visual">
+                                        <i class="fa-solid fa-soap"></i>
+                                        <span>선블록 크림</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Completion Status Message -->
+                        <div class="packing-status-message" id="packing-status-banner">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>모든 아이템이 세로로 흔들림 없이 정돈되었습니다!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">KEY FEATURES</span>
+                    <h2 class="section-title">정리 정돈의 불편함을 해소하는 디테일</h2>
+                    <p class="section-desc">단순한 디자인을 넘어, 완벽한 사용자 경험을 위해 설계된 arlloy만의 핵심 기능을 만나보세요.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card reveal-on-scroll">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                        </div>
+                        <h3>결대로 접히는 하이브리드 바디</h3>
+                        <p>특허받은 수평 보강 패널 설계로, 지퍼를 열면 넓게 늘어나며 각을 세우고 지퍼를 닫으면 주머니처럼 슬림하게 결을 따라 접힙니다.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card reveal-on-scroll">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>180도 와이드 오프닝 시야</h3>
+                        <p>바닥 면까지 이어지는 롱 지퍼 라인 덕분에 파우치 상부가 완전히 오픈되어, 소품들이 한눈에 보이고 꺼내기가 무척 편리합니다.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card reveal-on-scroll">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </div>
+                        <h3>세우는 독립형 세로 슬롯</h3>
+                        <p>내부 파티션이 밴딩과 고무 마감 슬롯 구조로 되어 있어 브러쉬, 스킨케어 병, 틴트 등을 세워서 수납하여 섞이거나 새지 않습니다.</p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card reveal-on-scroll">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>방수 코팅 및 원단 복원력</h3>
+                        <p>고밀도 방수 가공 옥스포드 나일론 원단으로 화장품 오염과 침수를 방지하며, 눌리거나 접혀도 주름이 쉽게 펴지는 원단 복원력이 우수합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Material Details Section -->
+        <section class="details-section" id="premium-details">
+            <div class="decor-leaf leaf-left"><i class="fa-solid fa-leaf"></i></div>
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">PREMIUM QUALITY</span>
+                    <h2 class="section-title">디테일로 완성하는 프리미엄 퀄리티</h2>
+                    <p class="section-desc">소재 선정부터 마감까지, 슬림핏 삼각 파우치만의 독보적인 퀄리티 디테일입니다.</p>
+                </div>
+
+                <div class="details-grid reveal-on-scroll">
+                    <div class="details-visual-side">
+                        <div class="details-img-card">
+                            <img src="images/파우치내부-3.jpg" alt="arlloy premium quality details" class="details-img">
+                        </div>
+                    </div>
+                    <div class="details-info-side">
+                        <div class="detail-spec-card">
+                            <div class="detail-number">01</div>
+                            <div class="detail-desc-box">
+                                <h3>High-quality lining (프리미엄 안감)</h3>
+                                <p>내부에 고급 방수 나일론 이중 안감 처리를 하여 화장품이 새어 나와도 겉으로 번지지 않으며 오염 시 쉽게 닦아낼 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="detail-spec-card">
+                            <div class="detail-number">02</div>
+                            <div class="detail-desc-box">
+                                <h3>3D structure (입체 아코디언 골조)</h3>
+                                <p>특허 구조의 수평 라인 보강재가 내장되어 있어 물건을 가득 넣어도 배가 불룩해지지 않고 납작하게 각을 유지합니다.</p>
+                            </div>
+                        </div>
+                        <div class="detail-spec-card">
+                            <div class="detail-number">03</div>
+                            <div class="detail-desc-box">
+                                <h3>PVC waterproof (고밀도 생활 방수)</h3>
+                                <p>겉감 표면에 발수 코팅 가공 마감을 적용하여 물방울이나 화장품 오염이 흡수되지 않고 흘러내려 내부 소품을 온전히 보호합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">USER EXPERIENCES</span>
+                    <h2 class="section-title">arlloy와 함께 변화된 일상</h2>
+                    <p class="section-desc">이미 arlloy의 접이식 스마트 정리 시스템을 경험한 고객님들의 리얼 후기입니다.</p>
+                </div>
+
+                <div class="reviews-slider">
+                    <!-- Review Card 1 -->
+                    <div class="review-card reveal-on-scroll">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "인스타 광고 보고 반신반의하며 샀는데 진짜 대만족이에요! 전에는 화장품 찾으려고 항상 파우치를 뒤집어엎었는데, 이건 지퍼만 열면 책장처럼 화장품이 다 보여서 화장 시간이 절반으로 줄었어요."
+                        </p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">김*희</div>
+                            <div class="reviewer-details">
+                                <span class="reviewer-name">김은희 님</span>
+                                <span class="reviewer-purchase">구매 컬러: Blossom Pink</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="review-card reveal-on-scroll">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "출장 갈 때 이만한 게 없습니다. 가방 구석에 얇게 접어 넣었다가 호텔 화장대에 지퍼 열어놓으면 바로 훌륭한 화장대가 돼요. 쏟아질 일 없고 방수 코팅도 아주 탄탄합니다. 남성 스킨케어용으로 인디고 블루 강추해요."
+                        </p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">박*민</div>
+                            <div class="reviewer-details">
+                                <span class="reviewer-name">박정민 님</span>
+                                <span class="reviewer-purchase">구매 컬러: Indigo Blue</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="review-card reveal-on-scroll">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="review-text">
+                            "납작하게 접히는데 물건 넣으면 주름 잡히면서 입체감 있게 가방 각이 딱 잡혀요. 샌디 베이지 샀는데 컬러감이 가을가을하고 엄청 고급스러워요. 주변 친구들이 다 신기해하며 물어보네요 ㅎㅎ"
+                        </p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">이*진</div>
+                            <div class="reviewer-details">
+                                <span class="reviewer-name">이서진 님</span>
+                                <span class="reviewer-purchase">구매 컬러: Sandy Beige</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / CTA section -->
+        <section class="cta-newsletter-section">
+            <div class="container text-center">
+                <h2 class="reveal-on-scroll">arlloy의 소식을 가장 먼저 받아보세요</h2>
+                <p class="reveal-on-scroll">신제품 출시 정보 및 구독자 전용 10% 추가 할인 쿠폰 코드를 발송해 드립니다.</p>
+                <form class="newsletter-form reveal-on-scroll" onsubmit="event.preventDefault(); alert('구독해 주셔서 감사합니다! 10% 추가 쿠폰이 메일로 전송되었습니다.'); this.reset();">
+                    <input type="email" placeholder="이메일 주소를 입력해 주세요" required aria-label="Email for Newsletter">
+                    <button type="submit" class="btn btn-dark">구독하기</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <!-- Product Info Section -->
+        <section class="product-info-section" id="product-info">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-subtitle">SPECIFICATIONS</span>
+                    <h2 class="section-title">PRODUCT INFO</h2>
+                    <p class="section-desc">슬림핏 삼각 파우치의 상세 제품 정보를 확인해보세요.</p>
+                </div>
+
+                <div class="product-info-layout reveal-on-scroll">
+                    <div class="info-table-wrapper">
+                        <table class="info-table">
+                            <tbody>
+                                <tr>
+                                    <th>소재 (Material)</th>
+                                    <td>프리미엄 고밀도 나일론 (Water-resistant Premium Nylon)</td>
+                                </tr>
+                                <tr>
+                                    <th>크기 (Size)</th>
+                                    <td>가로 22cm x 세로 12cm x 두께 3cm (접었을 때 기준)</td>
+                                </tr>
+                                <tr>
+                                    <th>무게 (Weight)</th>
+                                    <td>초경량 110g</td>
+                                </tr>
+                                <tr>
+                                    <th>색상 (Colors)</th>
+                                    <td>웜 아이보리 (Warm Ivory), 차콜 블랙 (Charcoal Black), 클래식 브라운 (Classic Brown)</td>
+                                </tr>
+                                <tr>
+                                    <th>제조국 (Country of Origin)</th>
+                                    <td>대한민국 (Korea)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="info-visual-card">
+                        <img src="images/아이보리브랜드.png" alt="arlloy pouch product preview" class="info-preview-img">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER specs table & disclosures -->
-    <footer class="bg-brand-black text-white pt-20 pb-12 border-t border-white/[0.05]">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
-                <!-- Company Info -->
-                <div class="lg:col-span-5 flex flex-col justify-between">
-                    <div>
-                        <span class="font-heading text-2xl tracking-wider font-extrabold uppercase text-brand-lavender block mb-6">
-                            ARLLOY
-                        </span>
-                        <p class="text-neutral-400 font-medium text-xs md:text-sm leading-relaxed max-w-sm mb-8">
-                            우리는 일상과 여정의 경계를 우아하게 채우는 고품격 오거나이징 툴을 연구합니다.
-                        </p>
-                    </div>
-                    
-                    <div class="space-y-3.5 text-xs md:text-sm text-neutral-500 font-medium">
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-phone text-brand-lavender"></i>
-                            <span>CS Center: 1644-0000 (평일 10:00 - 17:00)</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-envelope text-brand-lavender"></i>
-                            <span>Email: support@arlloy.com</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-location-dot text-brand-lavender"></i>
-                            <span>서울특별시 강남구 테헤란로 123, 5층</span>
-                        </div>
-                    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand-info">
+                <div class="footer-logo-container">
+                    <span class="footer-logo-main">arlloy</span>
+                    <span class="footer-logo-sub">NATURALLY YOURS</span>
                 </div>
-
-                <!-- Specs Table -->
-                <div class="lg:col-span-7">
-                    <h4 class="text-sm font-heading font-bold text-neutral-300 uppercase tracking-widest block mb-6">
-                        Product Specifications
-                    </h4>
-                    <div class="border border-white/10 rounded-2xl overflow-hidden">
-                        <table class="w-full text-left border-collapse text-xs md:text-sm">
-                            <tbody>
-                                <tr class="border-b border-white/[0.05] hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">제품명</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">ARLLOY Travel Organizer Pouch</td>
-                                </tr>
-                                <tr class="border-b border-white/[0.05] hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">크기</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">가로 22cm x 세로 16cm x 폭 7cm</td>
-                                </tr>
-                                <tr class="border-b border-white/[0.05] hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">무게</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">약 120g (초경량)</td>
-                                </tr>
-                                <tr class="border-b border-white/[0.05] hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">소재</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">겉감: 고밀도 나일론 (PVC 발수코팅), 안감: 이중방수 나일론</td>
-                                </tr>
-                                <tr class="border-b border-white/[0.05] hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">색상</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">웜 아이보리, 차콜 블랙, 클래식 브라운</td>
-                                </tr>
-                                <tr class="border-b border-white/[0.05] hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">제조국</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">대한민국 디자인 / 중국 OEM</td>
-                                </tr>
-                                <tr class="hover:bg-white/[0.02] transition-colors">
-                                    <td class="p-4 font-bold text-neutral-400 w-1/3 border-r border-white/[0.05]">품질보증</td>
-                                    <td class="p-4 text-neutral-300 font-semibold">제품 수령 후 1년간 무상 A/S 지원</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <p>결을 따라 완성되는 가장 혁신적인 폴딩 시스템 파우치 브랜드</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
                 </div>
             </div>
-
-            <!-- E-Commerce Disclosures -->
-            <div class="border-t border-white/[0.05] pt-8 flex flex-col md:flex-row items-baseline justify-between gap-6 text-[10px] text-neutral-600 font-medium">
-                <div class="space-y-1 leading-relaxed">
-                    <p>상호명: 주식회사 알로이코리아 | 대표자: 김알로 | 사업자등록번호: 000-00-00000</p>
-                    <p>통신판매업신고번호: 제2026-서울강남-0000호 | 개인정보보호책임자: 박우아</p>
-                    <p>본 사이트의 모든 디자인 및 콘텐츠는 저작권법의 보호를 받으며 무단 복제를 금지합니다.</p>
+            <div class="footer-links-grid">
+                <div class="footer-link-group">
+                    <h4>Customer Care</h4>
+                    <a href="#">자주 묻는 질문 (FAQ)</a>
+                    <a href="#">1:1 실시간 상담</a>
+                    <a href="#">배송/반품 정책</a>
+                    <a href="#">품질 보증 제도</a>
                 </div>
-                <div class="text-neutral-500 text-xs">
-                    &copy; 2026 ARLLOY. All rights reserved.
+                <div class="footer-link-group">
+                    <h4>Company</h4>
+                    <a href="#">회사 소개</a>
+                    <a href="#">특허 및 기술 설명</a>
+                    <a href="#">제휴 및 입점 문의</a>
+                    <a href="#">인재 채용</a>
+                </div>
+                <div class="footer-link-group">
+                    <h4>Legal</h4>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">소비자보호 규정</a>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 arlloy. All Rights Reserved. Designed for premium lifestyle organization.</p>
+        </div>
     </footer>
 
-    <!-- INTERACTIVE JAVASCRIPT FOR ACCORDIONS, TABS & OPTION CHOOSERS -->
-    <script>
-        // 1. Header Scroll Animation
-        const header = document.getElementById('main-header');
-        const headerCta = document.getElementById('header-cta');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 80) {
-                header.classList.add('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-neutral-100', 'py-4', 'shadow-sm');
-                header.classList.remove('bg-transparent', 'py-6');
-                header.querySelector('.logo').classList.add('text-brand-black');
-                header.querySelector('.logo').classList.remove('text-white');
-                header.querySelectorAll('.nav-link').forEach(link => {
-                    link.classList.add('text-brand-gray', 'hover:text-brand-black');
-                    link.classList.remove('text-white/80', 'hover:text-white');
-                });
-                headerCta.classList.add('bg-brand-black', 'text-white', 'hover:bg-brand-lavender');
-                headerCta.classList.remove('bg-white', 'text-brand-black');
-            } else {
-                header.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-neutral-100', 'py-4', 'shadow-sm');
-                header.classList.add('bg-transparent', 'py-6');
-                header.querySelector('.logo').classList.remove('text-brand-black');
-                header.querySelector('.logo').classList.add('text-white');
-                header.querySelectorAll('.nav-link').forEach(link => {
-                    link.classList.remove('text-brand-gray', 'hover:text-brand-black');
-                    link.classList.add('text-white/80', 'hover:text-white');
-                });
-                headerCta.classList.remove('bg-brand-black', 'text-white', 'hover:bg-brand-lavender');
-                headerCta.classList.add('bg-white', 'text-brand-black');
-            }
-        });
-
-        // 2. Solution Section Switcher (3 Tabs)
-        const solutionTiers = [
-            {
-                title: "메인 수납공간",
-                sub: "쿠션, 파운데이션, 스킨케어 전용",
-                desc: "두껍고 부피가 큰 화장품을 세워서 안정적으로 고정하고 보관할 수 있습니다. 칸막이가 유연하게 움직여 선크림이나 기초 제품도 쏟아짐 없이 깔끔하게 자립 수납됩니다.",
-                highlight: "립스틱 홀더 4개 & 분리형 가벽 수납"
-            },
-            {
-                title: "브러쉬 전용 공간",
-                sub: "소중한 메이크업 브러쉬 보호",
-                desc: "브러쉬 모가 꺾이거나 립스틱 뚜껑에 닿아 위생적으로 오염되는 문제를 완벽하게 예방합니다. 밴드가 꽉 잡아주어 흔들려도 도구들이 움직이지 않습니다.",
-                highlight: "오염 방지 PVC 밴딩 커버 적용"
-            },
-            {
-                title: "메쉬 포켓 공간",
-                sub: "작고 잃어버리기 쉬운 아이템",
-                desc: "헤어핀, 화장솜, 면봉, 샘플용 팩 등 파우치 바닥으로 굴러다니기 쉬운 소품들을 메쉬 격벽 포켓에 분리 보관하세요. 투명하게 보여 바로 찾을 수 있습니다.",
-                highlight: "지퍼형 고밀도 메쉬 오거나이저"
-            }
-        ];
-
-        function switchTab(index) {
-            // Update Active button state
-            for(let i=0; i<3; i++) {
-                const btn = document.getElementById(`tab-btn-${i}`);
-                const iconBox = btn.querySelector('.tab-icon-box');
-                const title = btn.querySelector('.tab-title');
-                if (i === index) {
-                    btn.classList.add('bg-brand-lavender/5', 'border-brand-lavender/30', 'shadow-sm');
-                    btn.classList.remove('bg-white', 'border-neutral-100', 'hover:border-neutral-200');
-                    iconBox.classList.add('bg-brand-lavender', 'text-white');
-                    iconBox.classList.remove('bg-neutral-100', 'text-brand-gray');
-                    title.classList.add('text-brand-black');
-                    title.classList.remove('text-brand-gray');
-                } else {
-                    btn.classList.remove('bg-brand-lavender/5', 'border-brand-lavender/30', 'shadow-sm');
-                    btn.classList.add('bg-white', 'border-neutral-100', 'hover:border-neutral-200');
-                    iconBox.classList.remove('bg-brand-lavender', 'text-white');
-                    iconBox.classList.add('bg-neutral-100', 'text-brand-gray');
-                    title.classList.remove('text-brand-black');
-                    title.classList.add('text-brand-gray');
-                }
-            }
-            // Update Details
-            document.getElementById('tab-detail-sub').textContent = solutionTiers[index].sub;
-            document.getElementById('tab-detail-title').textContent = solutionTiers[index].title;
-            document.getElementById('tab-detail-desc').textContent = solutionTiers[index].desc;
-            document.getElementById('tab-detail-highlight').textContent = solutionTiers[index].highlight;
-        }
-
-        // 3. FAQ Accordion Toggle
-        function toggleFAQ(index) {
-            const ans = document.getElementById(`faq-ans-${index}`);
-            const chevron = document.getElementById(`faq-chevron-${index}`);
-            if (ans.style.maxHeight === '300px') {
-                ans.style.maxHeight = '0px';
-                chevron.classList.remove('rotate-180', 'text-brand-lavender');
-            } else {
-                // close all other FAQs first
-                for(let i=0; i<10; i++) {
-                    const otherAns = document.getElementById(`faq-ans-${i}`);
-                    const otherChevron = document.getElementById(`faq-chevron-${i}`);
-                    if(otherAns) otherAns.style.maxHeight = '0px';
-                    if(otherChevron) otherChevron.classList.remove('rotate-180', 'text-brand-lavender');
-                }
-                ans.style.maxHeight = '300px';
-                chevron.classList.add('rotate-180', 'text-brand-lavender');
-            }
-        }
-
-        // 4. Checkout Image Selector & Action
-        const colors = {
-            ivory: {
-                name: "웜 아이보리",
-                img: "images/아이보리브랜드.png"
-            },
-            black: {
-                name: "차콜 블랙",
-                img: "images/pouch_black_open.png"
-            },
-            brown: {
-                name: "클래식 브라운",
-                img: "images/브라운브랜드.png"
-            }
-        };
-        let selectedColor = 'black';
-
-        function selectCheckoutColor(colorKey) {
-            selectedColor = colorKey;
-            // Update Preview Image
-            document.getElementById('checkout-preview-img').src = colors[colorKey].img;
-            document.getElementById('checkout-preview-img').alt = `ARLLOY Pouch ${colors[colorKey].name}`;
-            // Update Color Label
-            document.getElementById('checkout-color-label').textContent = colors[colorKey].name;
-            
-            // Update Active Border on Dots
-            ['ivory', 'black', 'brown'].forEach(key => {
-                const dot = document.getElementById(`color-dot-${key}`);
-                if (key === colorKey) {
-                    dot.classList.add('border-brand-lavender', 'ring-2', 'ring-brand-lavender/25');
-                    dot.innerHTML = '<span class="w-2.5 h-2.5 rounded-full bg-white shadow-sm mix-blend-difference"></span>';
-                } else {
-                    dot.classList.remove('border-brand-lavender', 'ring-2', 'ring-brand-lavender/25');
-                    dot.innerHTML = '';
-                }
-            });
-        }
-
-        function purchaseProduct() {
-            alert(`${colors[selectedColor].name} 제품이 결제창으로 연결됩니다.`);
-        }
-    </script>
+    <!-- JavaScript Bundle -->
+    <script src="app.js"></script>
 </body>
 </html>

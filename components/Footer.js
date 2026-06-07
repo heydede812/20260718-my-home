@@ -18,9 +18,14 @@ export default function Footer() {
           {/* Brand Info & Contacts */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <span className="font-heading text-2xl tracking-wider font-extrabold uppercase text-brand-lavender block mb-6">
-                ARLLOY
-              </span>
+              <div className="flex flex-col items-start mb-6">
+                <span className="font-heading text-2xl font-extrabold lowercase text-brand-lavender leading-none">
+                  arlloy
+                </span>
+                <span className="font-body text-[9px] font-bold tracking-[0.22em] uppercase text-neutral-400 mt-1.5 leading-none">
+                  NATURALLY YOURS
+                </span>
+              </div>
               <p className="text-neutral-400 font-medium text-xs md:text-sm leading-relaxed max-w-sm mb-8">
                 우리는 일상과 여정의 경계를 우아하게 채우는 고품격 오거나이징 툴을 연구합니다.
               </p>
