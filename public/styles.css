@@ -141,9 +141,7 @@ section {
 
 .logo-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1;
+    align-items: center;
     transition: var(--transition-smooth);
 }
 
@@ -151,42 +149,15 @@ section {
     transform: scale(1.02);
 }
 
-.logo-main {
-    font-family: var(--font-heading);
-    font-size: 1.65rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
     transition: var(--transition-smooth);
-    text-transform: lowercase;
 }
 
-.logo-sub {
-    font-family: var(--font-body);
-    font-size: 0.5rem;
-    font-weight: 700;
-    letter-spacing: 0.22em;
-    color: #ffffff;
-    opacity: 0.85;
-    margin-top: 3px;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-    transition: var(--transition-smooth);
-    text-transform: uppercase;
-}
-
-#main-header.scrolled .logo-main {
-    background: linear-gradient(135deg, var(--color-dark), var(--color-gold));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-    color: transparent;
-}
-
-#main-header.scrolled .logo-sub {
-    color: var(--color-dark-muted);
-    opacity: 0.9;
-    text-shadow: none;
+#main-header.scrolled .logo-img {
+    filter: brightness(0);
 }
 
 .nav-links {
@@ -1789,29 +1760,20 @@ footer {
 
 .footer-logo-container {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.footer-logo-main {
-    font-family: var(--font-heading);
-    font-size: 1.85rem;
-    font-weight: 800;
-    color: var(--color-light);
-    line-height: 1;
-    text-transform: lowercase;
+.footer-logo-img {
+    height: 54px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: var(--transition-smooth);
 }
 
-.footer-logo-sub {
-    font-family: var(--font-body);
-    font-size: 0.55rem;
-    font-weight: 700;
-    letter-spacing: 0.22em;
-    color: rgba(253, 253, 252, 0.5);
-    margin-top: 5px;
-    line-height: 1;
-    text-transform: uppercase;
+.footer-logo-img:hover {
+    opacity: 1;
 }
 
 .footer-brand-info p {
