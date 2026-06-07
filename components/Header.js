@@ -44,11 +44,11 @@ export default function Header() {
           className="flex items-center transition-transform duration-300 hover:scale-[1.02]"
         >
           <span 
-            className={`font-heading font-extrabold text-2xl tracking-tight transition-all duration-300 ${
+            className={`font-heading font-semibold text-2xl tracking-tight lowercase transition-all duration-300 ${
               scrolled ? 'text-brand-black' : 'text-white'
             }`}
           >
-            아를로이.
+            arlloy
           </span>
         </a>
 

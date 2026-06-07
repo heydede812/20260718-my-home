@@ -30,8 +30,8 @@ export default function Footer() {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 flex flex-col gap-6">
-            <span className="text-2xl font-heading font-extrabold tracking-tight text-brand-black">
-              아를로이.
+            <span className="text-2xl font-heading font-semibold tracking-tight text-brand-black lowercase">
+              arlloy
             </span>
             <p className="text-neutral-500 font-medium text-xs md:text-sm leading-relaxed max-w-sm">
               우리는 공간의 조화와 이동의 자유를 위한 도구를 디자인합니다. 아를로이는 현대의 노마드, 프로페셔널, 그리고 여행자가 더 자유롭게 움직일 수 있도록 돕습니다.

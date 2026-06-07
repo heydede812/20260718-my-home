@@ -206,11 +206,12 @@ input {
 
 .brand-logo-text {
     font-family: var(--font-heading);
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: -0.04em;
     color: var(--color-white);
     transition: color 0.3s ease;
+    text-transform: lowercase;
 }
 
 #main-header.scrolled .brand-logo-text {
@@ -1508,10 +1509,11 @@ input {
 
 .footer-logo {
     font-family: var(--font-heading);
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: -0.04em;
     color: var(--color-black);
+    text-transform: lowercase;
 }
 
 .footer-brand-col p {
