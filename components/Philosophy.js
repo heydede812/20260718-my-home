@@ -38,8 +38,15 @@ export default function Philosophy() {
           <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight mb-6">
             움직임의 철학
           </h2>
-          <p className="text-neutral-400 font-light text-base sm:text-lg leading-relaxed">
-            {"'아름다움'과 '이로이(이롭게 하다)'를 연결하여 지은 이름입니다. 있는 그대로 충분히 아름다운 당신의 삶을 더 싱그럽고 이롭게 만듭니다. 자연스러운 미와 실질적인 유익함을 동시에 추구하며, 삶의 결을 한층 더 풍요롭게 가꾸어 줍니다."}
+          <p className="text-neutral-400 font-light text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+            <span className="block text-xs font-bold text-brand-lavender/80 tracking-wider mb-6">
+              브랜드 네임은 브랜드 가치를 언어로 표현해 소비자가 쉽게 기억하도록 돕는 역할을 합니다.
+            </span>
+            {"아를로이(arlloy)는 '아름다움'과 '이로움'을 연결하여 만든 이름입니다."}
+            <br /><br />
+            {"있는 그대로 충분히 아름다운 삶을 바탕으로 보다 싱그럽고 이로운 방향으로 나아가는 태도를 담고 있습니다."}
+            <br /><br />
+            {"자연스러운 미와 실질적인 유익함을 동시에 추구하며, 삶의 결을 한층 더 풍요롭게 만드는 의미를 포함합니다."}
           </p>
         </div>
 

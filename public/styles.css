@@ -7,15 +7,15 @@
 :root {
     /* Color System */
     --color-white: #ffffff;
-    --color-ivory: #FAF8F5;
-    --color-black: #222222;
-    --color-charcoal: #1F1F1F;
-    --color-dark-gray: #2D2D2D;
-    --color-gray: #737373;
-    --color-beige: #F5F2ED;
-    --color-lavender: #8B5CF6;
-    --color-lavender-dark: #7c3aed;
-    --color-lavender-light: #F5F3FF;
+    --color-ivory: #F6F4EE;
+    --color-black: #111111;
+    --color-charcoal: #151515;
+    --color-dark-gray: #1E1E1E;
+    --color-gray: #7A7A7A;
+    --color-beige: #FAF9F6;
+    --color-lavender: #C5A880;
+    --color-lavender-dark: #B59870;
+    --color-lavender-light: #FAF9F6;
     
     /* Typography */
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;

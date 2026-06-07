@@ -9,18 +9,18 @@ module.exports = {
       colors: {
         brand: {
           white: "#ffffff",
-          ivory: "#FAF8F5",
-          black: "#222222",
-          charcoal: "#1F1F1F",
-          "dark-gray": "#2D2D2D",
-          gray: "#737373",
-          beige: "#F5F2ED",
-          "light-gray": "#FAF8F5",
+          ivory: "#F6F4EE",
+          black: "#111111",
+          charcoal: "#151515",
+          "dark-gray": "#1E1E1E",
+          gray: "#7A7A7A",
+          beige: "#FAF9F6",
+          "light-gray": "#FAF9F6",
           lavender: {
-            light: "#F5F3FF",
-            DEFAULT: "#8B5CF6",
-            dark: "#7c3aed",
-            hover: "#7c3aed"
+            light: "#FAF9F6",
+            DEFAULT: "#C5A880",
+            dark: "#B59870",
+            hover: "#B59870"
           }
         }
       },
