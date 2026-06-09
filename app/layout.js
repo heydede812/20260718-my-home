@@ -28,6 +28,13 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  // Google & Naver Search Engine Verification (Fill in your own codes)
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+  },
+  other: {
+    'naver-site-verification': 'YOUR_NAVER_VERIFICATION_CODE',
   }
 }
 
