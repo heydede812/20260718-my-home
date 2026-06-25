@@ -8,14 +8,15 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          white: "#ffffff",
-          ivory: "#F6F4EE",
+          white: "#FFFFFF",
+          ivory: "#F7F4EF",
+          beige: "#EEE8DE",
+          purple: "#6E4BB8",
           black: "#111111",
-          charcoal: "#151515",
+          charcoal: "#222222",
           "dark-gray": "#1E1E1E",
           gray: "#7A7A7A",
-          beige: "#FAF9F6",
-          "light-gray": "#FAF9F6",
+          "light-gray": "#F3F4F6",
           lavender: {
             light: "#FAF9F6",
             DEFAULT: "#C5A880",
