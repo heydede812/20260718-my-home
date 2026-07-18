@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minwoo Kim | Portfolio</title>
+    <meta name="description" content="Minwoo Kim's personal portfolio website - Frontend Developer & UI/UX Designer. Discover my projects, skills, and experience.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="logo-link">
+                <span>MK</span><span class="dot">.</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="icon-menu"></i>
+                    <i data-lucide="x" class="icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <div class="badge-container">
+                        <span class="hero-badge">Available for Work</span>
+                    </div>
+                    <h1 class="hero-title">
+                        안녕하세요, <br>
+                        <span class="text-gradient">김민우</span>입니다.
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        저는 <span id="typewriter" class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        사용자 중심의 가치를 고민하며, 직관적인 UI와 매끄러운 사용자 경험(UX)을 웹 기술로 구현하는 프론트엔드 개발자입니다. 최신 웹 표준과 높은 최적화를 지향합니다.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+                            프로젝트 보기 <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                            연락하기
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual scroll-reveal">
+                    <div class="hero-card glass">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <span class="card-title">developer.json</span>
+                        </div>
+                        <div class="card-body">
+                            <pre><code><span class="json-key">"name"</span>: <span class="json-val">"Minwoo Kim"</span>,
+<span class="json-key">"role"</span>: <span class="json-val">"Frontend Developer"</span>,
+<span class="json-key">"skills"</span>: [
+  <span class="json-val">"HTML5/CSS3"</span>,
+  <span class="json-val">"JavaScript (ES6+)"</span>,
+  <span class="json-val">"React / Next.js"</span>,
+  <span class="json-val">"TypeScript"</span>
+],
+<span class="json-key">"interests"</span>: [
+  <span class="json-val">"Web Performance"</span>,
+  <span class="json-val">"Interaction Design"</span>
+]</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+                <span>Scroll Down</span>
+                <i data-lucide="chevrons-down" class="scroll-down-icon"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">자신을 소개합니다</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info scroll-reveal">
+                        <h3 class="about-heading">끊임없이 성장하며 더 나은 경험을 창조합니다.</h3>
+                        <p class="about-text">
+                            기술은 사용자의 문제를 해결하기 위한 도구라고 생각합니다. 그렇기에 코드를 작성할 때 단순히 기능이 동작하는 것을 넘어, 사용자가 마주할 화면의 디테일과 반응성, 그리고 접근성에 집중합니다.
+                        </p>
+                        <p class="about-text">
+                            새로운 트렌드와 프레임워크에 관심을 두면서도, 견고하고 기초가 튼튼한 Vanilla Javascript와 CSS에 깊은 애정을 가지고 있습니다. 협업 환경에서의 원활한 커뮤니케이션을 지향합니다.
+                        </p>
+                        
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">진행 프로젝트</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">사용자 만족 지향</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-tabs-container scroll-reveal glass">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="experience" id="tab-btn-experience">경력</button>
+                            <button class="tab-btn" data-tab="education" id="tab-btn-education">학력</button>
+                            <button class="tab-btn" data-tab="tools" id="tab-btn-tools">툴킷</button>
+                        </div>
+                        
+                        <div class="tabs-content">
+                            <!-- Experience Tab -->
+                            <div class="tab-pane active" id="tab-pane-experience">
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-info">
+                                            <span class="timeline-date">2024 - Present</span>
+                                            <h4 class="timeline-title">프리랜서 프론트엔드 개발자</h4>
+                                            <p class="timeline-desc">다양한 클라이언트의 웹 애플리케이션 프론트엔드 개발 및 반응형 퍼블리싱 담당, 성능 및 로딩 최적화 달성.</p>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-info">
+                                            <span class="timeline-date">2022 - 2024</span>
+                                            <h4 class="timeline-title">웹 퍼블리셔 / 에이전시</h4>
+                                            <p class="timeline-desc">다양한 브랜드 사이트 제작 및 크로스 브라우징, UI 컴포넌트 라이브러리 제작 및 기획팀과의 긴밀한 협업.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Education Tab -->
+                            <div class="tab-pane" id="tab-pane-education">
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-info">
+                                            <span class="timeline-date">2018 - 2022</span>
+                                            <h4 class="timeline-title">컴퓨터공학과 학사 학위</h4>
+                                            <p class="timeline-desc">컴퓨터 공학 및 소프트웨어 설계 기초 학습. 웹 기술 연구 동아리 리더 활동.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Tools Tab -->
+                            <div class="tab-pane" id="tab-pane-tools">
+                                <div class="tools-grid">
+                                    <div class="tool-item">
+                                        <i data-lucide="github"></i>
+                                        <span>Git / GitHub</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i data-lucide="figma"></i>
+                                        <span>Figma</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i data-lucide="terminal"></i>
+                                        <span>VS Code</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i data-lucide="chrome"></i>
+                                        <span>Chrome DevTools</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i data-lucide="slack"></i>
+                                        <span>Slack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">My Skills</span>
+                    <h2 class="section-title">보유 기술 역량</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skills-card glass scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="code-2" class="skills-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React / Next.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-card glass scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="database" class="skills-icon"></i>
+                            <h3>Backend & Others</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js / Express</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL / NoSQL</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title">프로젝트 쇼케이스</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass scroll-reveal">
+                        <div class="project-image-placeholder">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="shopping-bag" class="project-icon"></i>
+                            </div>
+                            <div class="project-image-gradient"></div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">Smart E-commerce Platform</h3>
+                            <p class="project-description">
+                                실시간 상품 재고 연동 및 빠른 필터 기능을 지원하며, 모던하고 깔끔한 결제 흐름을 설계한 반응형 이커머스 웹 앱입니다.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Context API</span>
+                                <span class="tech-tag">CSS Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Demo Link" target="_blank">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link" aria-label="GitHub Link" target="_blank">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass scroll-reveal">
+                        <div class="project-image-placeholder">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="calendar-check" class="project-icon"></i>
+                            </div>
+                            <div class="project-image-gradient bg-gradient-2"></div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Productivity Tool</span>
+                            <h3 class="project-title">Task Planner & Dashboard</h3>
+                            <p class="project-description">
+                                개인의 일정 관리와 할 일 관리를 드래그 앤 드롭 방식으로 간편하게 구성하고 통계를 보여주는 글래스모피즘 기반 대시보드입니다.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Vanilla JS</span>
+                                <span class="tech-tag">HTML5 Drag&Drop</span>
+                                <span class="tech-tag">Local Storage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Demo Link" target="_blank">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link" aria-label="GitHub Link" target="_blank">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass scroll-reveal">
+                        <div class="project-image-placeholder">
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="sparkles" class="project-icon"></i>
+                            </div>
+                            <div class="project-image-gradient bg-gradient-3"></div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Interaction Design</span>
+                            <h3 class="project-title">Interactive Brand Story</h3>
+                            <p class="project-description">
+                                스크롤 제어 인터랙션을 통해 브랜드 철학과 스토리를 시각적으로 웅장하게 풀어낸 모션 그래픽 기반 마케팅 웹페이지입니다.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">CSS Animations</span>
+                                <span class="tech-tag">Intersection Observer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Demo Link" target="_blank">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link" aria-label="GitHub Link" target="_blank">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">연락처 및 문의</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info scroll-reveal">
+                        <h3 class="contact-heading">새로운 프로젝트나 협업을 구상 중이신가요?</h3>
+                        <p class="contact-text">
+                            언제든지 편하게 메세지를 남겨주세요. 아이디어를 현실로 만드는 과정에 기여하고 싶습니다.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon-wrapper">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">이메일</span>
+                                    <a href="mailto:heydede812@gmail.com" class="detail-value">heydede812@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="detail-icon-wrapper">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">지역</span>
+                                    <span class="detail-value">대한민국, 서울</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/heydede812" target="_blank" aria-label="GitHub Link" class="social-link">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn Link" class="social-link">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter Link" class="social-link">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container glass scroll-reveal">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="form-name" class="form-input" required placeholder=" ">
+                                <label for="form-name" class="form-label">이름</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="form-email" class="form-input" required placeholder=" ">
+                                <label for="form-email" class="form-label">이메일 주소</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-input form-textarea" required placeholder=" "></textarea>
+                                <label for="form-message" class="form-label">메세지</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span class="btn-text">메세지 보내기</span>
+                                <i data-lucide="send" class="btn-icon"></i>
+                                <span class="spinner hidden"></span>
+                            </button>
+                            
+                            <div id="form-status" class="form-status-msg hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo-footer">MK<span class="dot">.</span></a>
+                <p class="footer-copy">&copy; 2026 Minwoo Kim. All rights reserved.</p>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
