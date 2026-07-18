@@ -2,9 +2,20 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useCart } from '../context/CartContext'
 
 export default function NewProductReveal() {
   const [selectedColor, setSelectedColor] = useState('brown')
+  const { addToCart } = useCart()
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: `pouch-${activeColor.id}`,
+      name: `아를로이 오픈 뷰 파우치 (${activeColor.name})`,
+      price: 35,
+      image: activeColor.image,
+    })
+  }
 
   const colors = [
     {
@@ -117,6 +128,22 @@ export default function NewProductReveal() {
               </p>
             </motion.div>
           </AnimatePresence>
+
+          {/* Add to Cart Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, delay: 0.3 }}
+            className="mt-10 w-full"
+          >
+            <button
+              onClick={handleAddToCart}
+              className="px-8 py-4 bg-brand-charcoal hover:bg-brand-purple text-brand-white text-xs font-bold tracking-widest uppercase rounded-xl transition-all duration-300 active:scale-95 shadow-lg"
+            >
+              장바구니 담기 — $35.00
+            </button>
+          </motion.div>
         </div>
 
         {/* Right Column: Visual Product Showcase */}

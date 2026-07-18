@@ -11,12 +11,59 @@ export default function StickyCart() {
     updateQuantity, 
     removeFromCart, 
     cartCount, 
-    cartTotal 
+    cartTotal,
+    clearCart
   } = useCart()
 
   const freeShippingThreshold = 75
   const isFreeShipping = cartTotal >= freeShippingThreshold
   const amountNeeded = freeShippingThreshold - cartTotal
+
+  const handleCheckout = async () => {
+    try {
+      const PortOne = await import('@portone/browser-sdk/v2');
+
+      const paymentId = `payment-${crypto.randomUUID()}`;
+      const orderName = cartItems.map(item => `${item.name} x${item.quantity}`).join(', ');
+
+      const response = await PortOne.requestPayment({
+        storeId: process.env.NEXT_PUBLIC_PORTONE_STORE_ID || 'store-3375c3db-8bb0-4d57-9d7a-cfb3b9b4b02e',
+        channelKey: process.env.NEXT_PUBLIC_PORTONE_CHANNEL_KEY || 'channel-key-8302d99d-16a8-42f1-b850-705b630dc65a',
+        paymentId: paymentId,
+        orderName: orderName.substring(0, 100),
+        totalAmount: cartTotal,
+        currency: 'CURRENCY_KRW',
+        payMethod: 'CARD',
+        redirectUrl: `${window.location.origin}/payment-redirect`,
+      });
+
+      if (response.code != null) {
+        alert(`결제 실패: ${response.message}`);
+        return;
+      }
+
+      const verifyResponse = await fetch('/api/payment/verify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          paymentId: response.paymentId,
+          totalAmount: cartTotal,
+        }),
+      });
+
+      const verifyData = await verifyResponse.json();
+      if (verifyData.success) {
+        alert('결제가 성공적으로 완료 및 검증되었습니다!');
+        clearCart();
+        setIsCartOpen(false);
+      } else {
+        alert(`결제 검증 실패: ${verifyData.message || '결제 정보가 올바르지 않습니다.'}`);
+      }
+    } catch (error) {
+      console.error('Checkout error:', error);
+      alert('결제 창을 여는 과정에서 오류가 발생했습니다.');
+    }
+  };
 
   return (
     <>
@@ -165,7 +212,7 @@ export default function StickyCart() {
             </p>
 
             <button
-              onClick={() => alert('결제 페이지로 이동합니다...')}
+              onClick={handleCheckout}
               className="w-full bg-brand-black hover:bg-brand-lavender text-white text-xs font-bold uppercase tracking-wider py-4.5 rounded-full flex items-center justify-center gap-2 shadow-lg transition-colors duration-300 group"
             >
               안전하게 결제하기

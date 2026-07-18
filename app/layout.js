@@ -1,5 +1,7 @@
 import { Inter, Outfit } from 'next/font/google'
 import './globals.css'
+import { CartProvider } from '../context/CartContext'
+import StickyCart from '../components/StickyCart'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -79,7 +81,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-white text-brand-black min-h-screen">
-        {children}
+        <CartProvider>
+          {children}
+          <StickyCart />
+        </CartProvider>
       </body>
     </html>
   )
